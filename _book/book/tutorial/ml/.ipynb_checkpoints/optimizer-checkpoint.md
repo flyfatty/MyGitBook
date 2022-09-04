@@ -1,0 +1,8 @@
+1. AdaGrad
+2. RMSProp
+3. Adam
+4. AMSGrad
+
+在《深入浅出pytorch》第2.9节的代码2.28下方有简单提到对以上优化器各参数调节的作用。暂时摘录如下：
+
+这些优化器类在构造时传入的第一个参数一般是模型参数的生成器（或者如代码2.27所示的参数组的字典列表），第二个参数一般是学习率。对于AdaGrad算法来说，可以使用torch.optim.Adagrad优化器来进行优化，其中，lr_decay参数指定了学习率的衰减速率，weight_decay参数指定了权重的衰减速率，initial_accumulator_value设置了梯度的初始累加值。如果要使用RMSProp算法，可以使用torch.optim.RMSprop类，alpha参数设置了指数移动平均的参数，eps参数设置是为了提高算法的数值稳定性，可以保持默认的值，weight_decay参数指定了权重的衰减速率，momentum指定了动量参数，centered参数如果设置为True，会对梯度做基于方差的归一化处理（默认为False），即梯度除以梯度方差估计值的平方根。如果要使用Adam算法，可以使用torch.optim.Adam类，其中的betas参数输入含有两个参数的一个元组，分别是梯度和梯度平方的指数移动平均的参数。eps参数设置是为了提高算法的数值稳定性，可以保持默认的值，weight_decay参数指定了权重的衰减速率，amsgrad参数指定是否使用AMSGrad算法作为Adam算法的变种。有关AMSGrad算法

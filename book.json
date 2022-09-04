@@ -1,0 +1,24 @@
+{
+    "plugins":[
+        "-search",
+        "-lunr",
+        "-sharing",
+        "search-pro",
+        "advanced-emoji",
+        "mermaid-gb3",
+        "chapter-fold",
+        "expandable-chapters",
+        "highlight",
+        "emphasize",
+        "prism",
+        "mathjax"
+    ],
+    "pluginsConfig":{
+        "prism":{
+            "css": [
+                "prismjs/themes/prism-okaidia.css"
+            ]
+        }
+    }
+
+}

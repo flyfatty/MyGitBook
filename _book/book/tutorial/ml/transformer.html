@@ -1,0 +1,837 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Transformer · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="pytorch.html" />
+    
+    
+    <link rel="prev" href="rnn.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introducation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../markdown.html">
+            
+                <a href="../markdown.html">
+            
+                    
+                    MarkDown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    机器学习基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="basic.html">
+            
+                <a href="basic.html">
+            
+                    
+                    什么是机器学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="rnn.html">
+            
+                <a href="rnn.html">
+            
+                    
+                    循环神经网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="transformer.html">
+            
+                <a href="transformer.html">
+            
+                    
+                    Transformer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="pytorch.html">
+            
+                <a href="pytorch.html">
+            
+                    
+                    PyTorch Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="allennlp.html">
+            
+                <a href="allennlp.html">
+            
+                    
+                    AllenNLP Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="snorkel.html">
+            
+                <a href="snorkel.html">
+            
+                    
+                    Snorkel Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="metric.html">
+            
+                <a href="metric.html">
+            
+                    
+                    Metric
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="optimizer.html">
+            
+                <a href="optimizer.html">
+            
+                    
+                    Optimizer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="loss.html">
+            
+                <a href="loss.html">
+            
+                    
+                    Loss
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Paper阅读
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../papers/GlobalPointer.html">
+            
+                <a href="../../papers/GlobalPointer.html">
+            
+                    
+                    GlobalPointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../papers/RoPE.html">
+            
+                <a href="../../papers/RoPE.html">
+            
+                    
+                    RoPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../papers/多标签CE.html">
+            
+                <a href="../../papers/多标签CE.html">
+            
+                    
+                    多标签CE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Transformer</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><img src="https://pic2.zhimg.com/v2-6a13fc0ffc0b1e48c60782ec43ff4d18_1440w.jpg?source=172ae18b" alt="Transformer&#x56FE;&#x50CF;"></p>
+<center><h1 id="transformer">Transformer</h1></center>
+
+<h4 id="&#x5E38;&#x89C1;&#x95EE;&#x9898;">&#x5E38;&#x89C1;&#x95EE;&#x9898;</h4>
+<ol>
+<li>&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;&#x201C;&#x591A;&#x5934;&#x201D;&#x6CE8;&#x610F;&#x529B;&#x673A;&#x5236;&#xFF1F;</li>
+<li>&#x4E3A;&#x4EC0;&#x4E48;&#x8FDB;&#x884C;&#x7F29;&#x653E;<script type="math/tex; ">\sqrt{d_k}</script>?</li>
+<li>&#x5B98;&#x65B9;Transformer&#x7684;multi-head attention&#x6709;&#x591A;&#x5C11;&#x4E2A;&#x201C;&#x5934;&#x201D;&#xFF1F;q&#x3001;k&#x3001;v&#x5404;&#x6709;&#x591A;&#x5C11;&#x7EF4;&#xFF1F;</li>
+<li>Transformer&#x7684;layer&#x662F;&#x7531;&#x4EC0;&#x4E48;&#x7EC4;&#x6210;&#x7684;&#xFF1F;</li>
+</ol>
+<hr>
+<p>Transformer&#x5B8C;&#x5168;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x5FAA;&#x73AF;&#x7F51;&#x7EDC;&#x7ED3;&#x6784;&#xFF0C;&#x53EA;&#x4F7F;&#x7528;&#x4E86;self-attention&#x6A21;&#x5757;&#x5B8C;&#x6210;&#x4E86;seq2seq&#x4EFB;&#x52A1;&#xFF0C;&#x8FD9;&#x4F7F;&#x5F97;&#x6574;&#x4E2A;&#x6A21;&#x578B;&#x53EF;&#x4EE5;&#x5E76;&#x884C;&#x8BA1;&#x7B97;&#xFF0C;&#x4E0D;&#x518D;&#x53D7;&#x9650;&#x4E8E;LSTM/GRU&#x7B49;&#x6A21;&#x578B;&#x7684;&#x65F6;&#x5E8F;&#x6027;&#x8D28;&#x3002;</p>
+<h2 id="multi-head-attention">Multi-Head Attention</h2>
+<blockquote>
+<p>Scaled Dot Product Attention &#xFF0C;&#x5C06;Query&#x548C;Key-Value&#x6620;&#x5C04;&#x5230;&#x8F93;&#x51FA;</p>
+</blockquote>
+<center><img src="https://pic1.zhimg.com/80/v2-e551f16cc7511f55151d152d28e2aab8_720w.jpg" width="25%" height="30%"></center>
+
+<p><script type="math/tex; mode=display">
+Attention \left ( Q,K,V\right )=Softmax(\frac{QK^T}{\sqrt{d_k}})V \\
+head_i=Attention(QW_i^Q,KW_i^K,VW_i^V) \\
+MultiHead(Q,K,V)=Concat(head_1,..,head_h)W^O \\
+W_i^Q\in \mathbb{R}^{d_{model} \times d_k},W_i^K\in \mathbb{R}^{d_{model} \times d_k},W_i^V\in \mathbb{R}^{d_{model} \times d_v},W_i^O\in \mathbb{R}^{h\cdot d_v \times d_{model}}
+</script></p>
+<pre class="language-"><code class="lang-python"><span class="hljs-keyword">import</span> math
+<span class="hljs-keyword">import</span> copy
+<span class="hljs-keyword">import</span> torch
+<span class="hljs-keyword">import</span> torch.nn <span class="hljs-keyword">as</span> nn
+<span class="hljs-keyword">import</span> torch.nn.functional <span class="hljs-keyword">as</span> F
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">clones</span><span class="hljs-params">(module, N)</span>:</span>
+    <span class="hljs-string">&quot;Produce N identical layers.&quot;</span>
+    <span class="hljs-keyword">return</span> nn.ModuleList([copy.deepcopy(module) <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> range(N)])
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">attention</span><span class="hljs-params">(query, key, value, mask=None, dropout=None)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;
+    &#x8F93;&#x5165;&#x5F62;&#x72B6;: B*h*N*d_k | B*h*N*d_k | B*h*N*d_v | 1*1*N*N
+    Batch&#x3001;head&#x662F;&#x72EC;&#x7ACB;&#x7684;&#xFF0C;&#x8FD0;&#x7B97;&#x65F6;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x601D;&#x8003;&#x53EF;&#x4EE5;&#x4E0D;&#x8003;&#x8651;
+    &quot;&quot;&quot;</span>
+    d_k = query.size(<span class="hljs-number">-1</span>)
+    scores = torch.matmul(query, key.transpose(<span class="hljs-number">-2</span>, <span class="hljs-number">-1</span>)) / math.sqrt(d_k)  <span class="hljs-comment"># B*h*N*N</span>
+    <span class="hljs-keyword">if</span> mask <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">None</span>:
+        scores = scores.masked_fill(mask == <span class="hljs-number">0</span>, <span class="hljs-number">-1e9</span>) <span class="hljs-comment"># B*h*N*N &#x5728; 0/1&#x8F74;&#x5E7F;&#x64AD;mask</span>
+    p_attn = F.softmax(scores, dim = <span class="hljs-number">-1</span>) <span class="hljs-comment"># Softmax&#x4E0D;&#x6539;&#x53D8;&#x5F62;&#x72B6;  B*h*N*N</span>
+    <span class="hljs-keyword">if</span> dropout <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">None</span>:
+        p_attn = dropout(p_attn) <span class="hljs-comment"># dropout&#x7684;&#x6982;&#x7387;&#x7ED3;&#x679C;&#x5F52;&#x96F6;&#xFF0C;&#x65E2;&#x4E0D;&#x5173;&#x6CE8;&#x67D0;&#x4E2A;&#x4F4D;&#x7F6E;&#x7684;&#x5355;&#x8BCD;  B*h*N*N</span>
+    <span class="hljs-keyword">return</span> torch.matmul(p_attn, value), p_attn <span class="hljs-comment"># B*h*N*N x B*h*N*d_v &#x6BCF;&#x4E2A;&#x5355;&#x8BCD;&#x4E0E;&#x5176;&#x4ED6;&#x4F4D;&#x7F6E;&#x7684;&#x5355;&#x8BCD;V&#x7D2F;&#x52A0;&#xFF08;&#x77E9;&#x9635;&#x4E58;&#xFF09; --&gt; B*h*N*d_v</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MultiHeadedAttention</span><span class="hljs-params">(nn.Module)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, h, d_model, dropout=<span class="hljs-number">0.1</span>)</span>:</span>
+        <span class="hljs-string">&quot;Take in model size and number of heads.&quot;</span>
+        super(MultiHeadedAttention, self).__init__()
+        <span class="hljs-keyword">assert</span> d_model % h == <span class="hljs-number">0</span>
+        <span class="hljs-comment"># We assume d_v always equals d_k</span>
+        self.d_k = d_model // h
+        self.h = h
+        self.linears = clones(nn.Linear(d_model, d_model), <span class="hljs-number">4</span>)
+        self.attn = <span class="hljs-keyword">None</span>
+        self.dropout = nn.Dropout(p=dropout)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">forward</span><span class="hljs-params">(self, query, key, value, mask=None)</span>:</span>
+        <span class="hljs-comment"># &#x6B64;&#x5904;&#x7684;&#x8F93;&#x5165;&#x5DF2;&#x7ECF;&#x5047;&#x8BBE;&#x662F; Multi-Head &#x5F62;&#x5F0F;</span>
+        <span class="hljs-comment"># B*N*d_model | B*N*d_model |  B*N*d_model |  B*N*N</span>
+        <span class="hljs-keyword">if</span> mask <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">None</span>:
+            <span class="hljs-comment"># Same mask applied to all h heads.</span>
+            mask = mask.unsqueeze(<span class="hljs-number">1</span>) <span class="hljs-comment"># 1*1*N*N</span>
+        nbatches = query.size(<span class="hljs-number">0</span>)
+
+        <span class="hljs-comment"># 1) Do all the linear projections in batch from d_model =&gt; h x d_k </span>
+        <span class="hljs-comment"># B*N*d_model x d_model*d_model =&gt; B*N*d_model==&gt; B*N*h*d_k ==&gt; B*h*N*d_k</span>
+        query, key, value = [l(x).view(nbatches, <span class="hljs-number">-1</span>, self.h, self.d_k).transpose(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
+                                    <span class="hljs-keyword">for</span> l, x <span class="hljs-keyword">in</span> zip(self.linears, (query, key, value))]
+
+        <span class="hljs-comment"># 2) Apply attention on all the projected vectors in batch. </span>
+        <span class="hljs-comment"># B*h*N*d_k --&gt; B*h*N*d_v , B*h*N*N</span>
+        x, self.attn = attention(query, key, value, mask=mask, dropout=self.dropout)
+
+        <span class="hljs-comment"># 3) &quot;Concat&quot; using a view and apply a final linear. </span>
+        <span class="hljs-comment"># B*h*N*d_v ==&gt; B*N*h*d_v ==&gt; B*N*d_model</span>
+        x = x.transpose(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>).contiguous().view(nbatches, <span class="hljs-number">-1</span>, self.h * self.d_k)
+        <span class="hljs-comment"># B*N*d_model x d_model*d_model ==&gt; B*N*d_model</span>
+        <span class="hljs-keyword">return</span> self.linears[<span class="hljs-number">-1</span>](x)
+</code></pre>
+<ul>
+<li><p>&#x4E3A;&#x4EC0;&#x4E48;&#x8FDB;&#x884C;&#x7F29;&#x653E;<script type="math/tex; ">\sqrt{d_k}</script>?</p>
+<ul>
+<li>&#x5BF9;&#x4E8E;&#x8F83;&#x5927;&#x7684;<script type="math/tex; ">d_k</script>&#xFF0C;&#x70B9;&#x79EF;&#x5927;&#x5E45;&#x589E;&#x5927;, &#x5C06;Softmax&#x51FD;&#x6570;&#x503C;&#x63A8;&#x5411;&#x5177;&#x6709;&#x6781;&#x5C0F;&#x68AF;&#x5EA6;&#x7684;&#x533A;&#x57DF;</li>
+<li>&#x4E3A;&#x4E86;&#x9610;&#x660E;&#x70B9;&#x79EF;&#x53D8;&#x5927;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x5047;&#x8BBE;<script type="math/tex; ">q</script>&#x548C;<script type="math/tex; ">k</script>&#x662F;&#x72EC;&#x7ACB;&#x7684;&#x968F;&#x673A;&#x53D8;&#x91CF;, &#x5E73;&#x5747;&#x503C;&#x4E3A;<script type="math/tex; ">0</script>&#xFF0C;&#x65B9;&#x5DEE;&#x4E3A;<script type="math/tex; ">1</script>&#xFF0C;&#x8FD9;&#x6837;&#x4ED6;&#x4EEC;&#x7684;&#x70B9;&#x79EF;&#x4E3A;<script type="math/tex; ">q\cdot k=\sum_i q_ik_i</script>&#xFF0C;&#x540C;&#x6837;&#x662F;&#x5747;&#x503C;<script type="math/tex; ">0</script>&#x4E3A;&#x65B9;&#x5DEE;&#x4E3A;<script type="math/tex; ">d_k</script>&#x3002;</li>
+<li>&#x4E3A;&#x4E86;&#x62B5;&#x6D88;&#x8FD9;&#x79CD;&#x5F71;&#x54CD;&#xFF0C;&#x6211;&#x4EEC;&#x7528;<script type="math/tex; ">\frac{1}{\sqrt{d_k}}</script>&#x6765;&#x7F29;&#x653E;&#x70B9;&#x79EF;&#x3002;</li>
+<li>&#x53EF;&#x4EE5;&#x4ECE;&#x4F59;&#x5F26;&#x76F8;&#x4F3C;&#x5EA6;&#x7684;&#x89D2;&#x5EA6;&#x89E3;&#x91CA; <script type="math/tex; ">cos(q,k) = \frac{q\cdot k}{\parallel q\parallel \times \parallel k\parallel }</script></li>
+</ul>
+</li>
+<li><p>&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;&#x201C;&#x591A;&#x5934;&#x201D;&#x6CE8;&#x610F;&#x529B;&#x673A;&#x5236;&#xFF1F;</p>
+<ul>
+<li>&#x628A;&#x8F93;&#x5165;&#x6620;&#x5C04;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x5B50;&#x7A7A;&#x95F4;&#xFF0C;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x4ECE;&#x4E0D;&#x540C;&#x7684;&#x89D2;&#x5EA6;&#x89C2;&#x5BDF;&#xFF0C;&#x7C7B;&#x4F3C;&#x5377;&#x79EF;&#x6838;&#x7684;&#x601D;&#x60F3;&#x3002;</li>
+</ul>
+</li>
+<li><p>Transformer&#x7684;&#x8F93;&#x5165;dim&#x548C;<script type="math/tex; ">Q</script>/<script type="math/tex; ">K</script>/<script type="math/tex; ">V</script>&#x53CA;Head&#x6570;<script type="math/tex; ">h</script>&#x7684;&#x5173;&#x7CFB;&#xFF1F;</p>
+<ul>
+<li><script type="math/tex; ">d_q=d_k</script></li>
+<li><script type="math/tex; ">d_v</script>&#x548C;<script type="math/tex; ">d_{model}</script>&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x7EF4;&#x5EA6;</li>
+</ul>
+</li>
+<li><p>&#x5B98;&#x65B9;Transformer&#x7684;multi-head attention&#x6709;&#x591A;&#x5C11;&#x4E2A;&#x201C;&#x5934;&#x201D;&#xFF1F;q&#x3001;k&#x3001;v&#x5404;&#x6709;&#x591A;&#x5C11;&#x7EF4;&#xFF1F;</p>
+<ul>
+<li>&#x5728;Transformer&#x4E2D;<script type="math/tex; ">h=8</script></li>
+<li>&#x5BF9;&#x6BCF;&#x4E2A;Head&#x6709;<script type="math/tex; ">d_k=d_v=d_{model}/ 8=64</script></li>
+</ul>
+</li>
+<li><p>Transformer&#x4E2D;&#x54EA;&#x4E9B;&#x5730;&#x65B9;&#x5E94;&#x7528;&#x4E86; Multi-Head Attention&#x673A;&#x5236;&#xFF1F;   </p>
+<ul>
+<li>Encoder&#x4E2D;&#x7684;Multi-Head Attention&#x5C42;&#x3002;Key&#x3001;Value&#x548C;Query&#x90FD;&#x6765;&#x81EA;&#x524D;&#x4E00;&#x5C42;&#x7684;&#x8F93;&#x51FA;&#xFF0C;Encoder&#x4E2D;&#x5F53;&#x524D;&#x5C42;&#x7684;&#x6BCF;&#x4E2A;&#x4F4D;&#x7F6E;&#x90FD;&#x80FD;Attend&#x5230;&#x524D;&#x4E00;&#x5C42;&#x7684;&#x6240;&#x6709;&#x4F4D;&#x7F6E;&#x3002;</li>
+<li>Decoder&#x4E2D;&#x7684;Multi-Head Attention&#x5C42;&#xFF08;*&#xFF09;&#x3002;Query&#x6765;&#x81EA;&#x5148;&#x524D;&#x7684;&#x89E3;&#x7801;&#x5668;&#x5C42;&#xFF0C;Key&#x548C;Value&#x6765;&#x81EA;Encoder&#x7684;&#x8F93;&#x51FA;&#xFF0C;Decoder&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x4F4D;&#x7F6E;Attend&#x8F93;&#x5165;&#x5E8F;&#x5217;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x4F4D;&#x7F6E;&#x3002;</li>
+<li>Decoder&#x4E2D;&#x7684;Masted Multi-Head Attention&#x5C42;&#x3002;Key&#x3001;Value&#x548C;Query&#x90FD;&#x6765;&#x81EA;&#x524D;&#x4E00;&#x5C42;&#x7684;&#x8F93;&#x51FA;&#xFF0C;Decoder&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x4F4D;&#x7F6E;Attend&#x5F53;&#x524D;&#x89E3;&#x7801;&#x4F4D;&#x7F6E;&#x548C;&#x5B83;&#x524D;&#x9762;&#x7684;&#x6240;&#x6709;&#x4F4D;&#x7F6E;&#x3002;&#x5728;&#x7F29;&#x653E;&#x540E;&#x7684;&#x70B9;&#x79EF;Attention logit&#x4E2D;&#xFF0C;&#x5C4F;&#x853D;&#xFF08;&#x8BBE;&#x4E3A;&#x8D1F;&#x65E0;&#x7A77;&#xFF09;Softmax&#x7684;&#x8F93;&#x5165;&#x4E2D;&#x6240;&#x6709;&#x5BF9;&#x5E94;&#x7740;&#x975E;&#x6CD5;&#x8FDE;&#x63A5;&#x7684;Value&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h2 id="position-wise&#x524D;&#x9988;&#x7F51;&#x7EDC;">Position-Wise&#x524D;&#x9988;&#x7F51;&#x7EDC;</h2>
+<p><script type="math/tex; mode=display">
+FFN(x)=max(0,xW_1+b_1)W_2+b_2
+</script></p>
+<p>&#x5728;Transformer&#x4E2D;&#x7684;Position-Wise&#x524D;&#x9988;&#x7F51;&#x7EDC;Layer&#x4E2D;&#xFF0C;&#x5305;&#x542B;&#x4E24;&#x6B21;&#x7EBF;&#x6027;&#x53D8;&#x6362;&#xFF0C;&#x4E2D;&#x95F4;&#x4F7F;&#x7528;Relu&#x6FC0;&#x6D3B;&#x51FD;&#x6570;&#xFF0C;&#x53C2;&#x6570;&#x7684;&#x7EF4;&#x5EA6;&#x4E3A; <script type="math/tex; ">W_1\in \mathbb{R}^{512 \times 2048} , W_2\in \mathbb{R}^{2048 \times 512}</script>
+&#x6BCF;&#x4E2A;P-W&#x524D;&#x9988;&#x7F51;&#x7EDC;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#xFF08;&#x5355;&#x8BCD;&#xFF09;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x4F4D;&#x7F6E;&#xFF08;&#x5355;&#x8BCD;&#xFF09;&#x5171;&#x4EAB;&#x5168;&#x8FDE;&#x63A5;&#x53C2;&#x6570;&#x3002;&#x8BA1;&#x7B97;&#x540E;&#x5F97;&#x5230;&#x7684;&#x683C;&#x5F0F;&#x4E3A; <script type="math/tex; ">B\times N\times d_{model}</script>&#xFF0C;&#x4E0E;&#x8F93;&#x5165;&#x683C;&#x5F0F;&#x4E00;&#x81F4;&#x3002;  </p>
+<pre class="language-"><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PositionwiseFeedForward</span><span class="hljs-params">(nn.Module)</span>:</span>
+    <span class="hljs-string">&quot;Implements FFN equation.&quot;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, d_model, d_ff, dropout=<span class="hljs-number">0.1</span>)</span>:</span>
+        super(PositionwiseFeedForward, self).__init__()
+        self.w_1 = nn.Linear(d_model, d_ff)
+        self.w_2 = nn.Linear(d_ff, d_model)
+        self.dropout = nn.Dropout(dropout)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">forward</span><span class="hljs-params">(self, x)</span>:</span>
+        <span class="hljs-comment"># B*N*d_model x d_model*d_ff x d_ff*d_model ==&gt; B*N*d_model  </span>
+        <span class="hljs-keyword">return</span> self.w_2(self.dropout(F.relu(self.w_1(x))))
+</code></pre>
+<h2 id="add--norm">Add &amp; Norm</h2>
+<p><script type="math/tex; mode=display">
+LN(x)=\alpha\times \frac{x-\mu}{\sigma + \varepsilon}+\beta
+</script></p>
+<p>&#x4EE5;&#x4E0A;&#x63D0;&#x5230;&#x7684;Multi-Head Attention&#x5C42;&#x548C;Position-Wise&#x524D;&#x9988;&#x7F51;&#x7EDC;&#x90FD;&#x5C5E;&#x4E8E;SubLayer&#xFF0C;&#x7ED3;&#x5408;Add&amp;Norm&#x7EC4;&#x6210;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;Layer&#x3002;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5728;&#x8BE5;&#x7248;&#x672C;&#x4E2D;Norm&#x51FA;&#x73B0;&#x5728;&#x6BCF;&#x6B21;&#x8FDB;&#x5165;sublayer&#x65F6;&#x6700;&#x5F00;&#x59CB;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LayerNorm</span><span class="hljs-params">(nn.Module)</span>:</span>
+    <span class="hljs-string">&quot;Construct a layernorm module (See citation for details).&quot;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, features, eps=<span class="hljs-number">1e-6</span>)</span>:</span>
+        super(LayerNorm, self).__init__()
+        self.a_2 = nn.Parameter(torch.ones(features))
+        self.b_2 = nn.Parameter(torch.zeros(features))
+        self.eps = eps
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">forward</span><span class="hljs-params">(self, x)</span>:</span>
+        <span class="hljs-comment"># B*N*d_model ==&gt; B*N*1</span>
+        mean = x.mean(<span class="hljs-number">-1</span>, keepdim=<span class="hljs-keyword">True</span>)
+        <span class="hljs-comment"># B*N*d_model ==&gt; B*N*1</span>
+        std = x.std(<span class="hljs-number">-1</span>, keepdim=<span class="hljs-keyword">True</span>)
+        <span class="hljs-comment"># d_model *  B*N*d_model + d_model ==&gt; B*N*d_model</span>
+        <span class="hljs-keyword">return</span> self.a_2 * (x - mean) / (std + self.eps) + self.b_2
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SublayerConnection</span><span class="hljs-params">(nn.Module)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;
+    A residual connection followed by a layer norm.
+    Note for code simplicity the norm is first as opposed to last.
+    &quot;&quot;&quot;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, size, dropout)</span>:</span>
+        super(SublayerConnection, self).__init__()
+        self.norm = LayerNorm(size)
+        self.dropout = nn.Dropout(dropout)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">forward</span><span class="hljs-params">(self, x, sublayer)</span>:</span>
+        <span class="hljs-comment"># B*N*d_model + B*N*d_model </span>
+        <span class="hljs-keyword">return</span> x + self.dropout(sublayer(self.norm(x)))
+</code></pre>
+<ul>
+<li><p>Layer Norm&#x7684;&#x4F5C;&#x7528;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</p>
+<ul>
+<li>&#x968F;&#x7740;&#x7F51;&#x7EDC;&#x6DF1;&#x5EA6;&#x7684;&#x589E;&#x52A0;&#xFF0C;&#x6570;&#x636E;&#x7684;&#x5206;&#x5E03;&#x4F1A;&#x4E0D;&#x65AD;&#x53D1;&#x751F;&#x53D8;&#x5316;,&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x7279;&#x5F81;&#x5206;&#x5E03;&#x7684;&#x7A33;&#x5B9A;&#x6027;&#xFF0C;&#x52A0;&#x5165;LN&#x8FD9;&#x6837;&#x53EF;&#x4EE5;<strong>&#x52A0;&#x901F;&#x6A21;&#x578B;&#x7684;&#x6536;&#x655B;&#x901F;&#x5EA6;</strong>&#x3002;</li>
+<li>&#x9632;&#x6B62;&#x8F93;&#x5165;&#x6570;&#x636E;&#x843D;&#x5728;&#x6FC0;&#x6D3B;&#x51FD;&#x6570;&#x7684;&#x9971;&#x548C;&#x533A;&#xFF0C;&#x53D1;&#x751F;&#x68AF;&#x5EA6;&#x6D88;&#x5931;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4F7F;&#x5F97;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x53D8;&#x5F97;&#x56F0;&#x96BE;&#x3002;</li>
+</ul>
+</li>
+<li><p>Layer Norm &#x4E0E; Batch Norm&#x7684;&#x533A;&#x522B;&#xFF1F;</p>
+<ul>
+<li>BN&#x7684;&#x4E3B;&#x8981;&#x601D;&#x60F3;&#x662F;: &#x5728;&#x6BCF;&#x4E00;&#x5C42;&#x7684;&#x6BCF;&#x4E00;&#x6279;&#x6570;&#x636E;(&#x4E00;&#x4E2A;batch&#x91CC;&#x7684;&#x540C;&#x4E00;&#x901A;&#x9053;)&#x4E0A;&#x8FDB;&#x884C;&#x5F52;&#x4E00;&#x5316;&#x3002;</li>
+<li>LN&#x7684;&#x4E3B;&#x8981;&#x601D;&#x60F3;&#x662F;:&#x662F;&#x5728;&#x6BCF;&#x4E00;&#x4E2A;&#x6837;&#x672C;(&#x4E00;&#x4E2A;&#x6837;&#x672C;&#x91CC;&#x7684;&#x4E0D;&#x540C;&#x901A;&#x9053;)&#x4E0A;&#x8BA1;&#x7B97;&#x5747;&#x503C;&#x548C;&#x65B9;&#x5DEE;&#xFF0C;&#x800C;&#x4E0D;&#x662F; BN &#x90A3;&#x79CD;&#x5728;&#x6279;&#x65B9;&#x5411;&#x8BA1;&#x7B97;&#x5747;&#x503C;&#x548C;&#x65B9;&#x5DEE;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h2 id="encoder">Encoder</h2>
+<h4 id="encoderlayer">EncoderLayer</h4>
+<p>&#x4E00;&#x4E2A;Layer&#x5305;&#x542B;&#x4E24;&#x4E2A;Sublayer&#xFF0C;&#x5206;&#x522B;&#x662F;Attention Layer&#x548C; FFN Layer&#x3002;
+&#x5728;Transformer&#x4E2D;&#xFF0C;Encoder&#x5305;&#x542B;6&#x4E2A;Layer&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EncoderLayer</span><span class="hljs-params">(nn.Module)</span>:</span>
+    <span class="hljs-string">&quot;Encoder is made up of self-attn and feed forward (defined below)&quot;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, size, self_attn, feed_forward, dropout)</span>:</span>
+        super(EncoderLayer, self).__init__()
+        self.self_attn = self_attn
+        self.feed_forward = feed_forward
+        self.sublayer = clones(SublayerConnection(size, dropout), <span class="hljs-number">2</span>)
+        self.size = size
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">forward</span><span class="hljs-params">(self, x, mask)</span>:</span>
+        <span class="hljs-string">&quot;Follow Figure 1 (left) for connections.&quot;</span>
+        x = self.sublayer[<span class="hljs-number">0</span>](x, <span class="hljs-keyword">lambda</span> x: self.self_attn(x, x, x, mask))
+        <span class="hljs-keyword">return</span> self.sublayer[<span class="hljs-number">1</span>](x, self.feed_forward)
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Encoder</span><span class="hljs-params">(nn.Module)</span>:</span>
+    <span class="hljs-string">&quot;Core encoder is a stack of N layers&quot;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, layer, N)</span>:</span>
+        super(Encoder, self).__init__()
+        self.layers = clones(layer, N)
+        self.norm = LayerNorm(layer.size)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">forward</span><span class="hljs-params">(self, x, mask)</span>:</span>
+        <span class="hljs-string">&quot;Pass the input (and mask) through each layer in turn.&quot;</span>
+        <span class="hljs-keyword">for</span> layer <span class="hljs-keyword">in</span> self.layers:
+            x = layer(x, mask)
+        <span class="hljs-keyword">return</span> self.norm(x)
+</code></pre>
+<h2 id="decoder">Decoder</h2>
+<p>&#x9664;&#x4E86;&#x62E5;&#x6709;&#x6BCF;&#x4E2A;Encoder Layer&#x4E2D;&#x7684;&#x4E24;&#x4E2A;Sublayer&#x4E4B;&#x5916;&#xFF0C;Decoder&#x8FD8;&#x63D2;&#x5165;&#x4E86;&#x7B2C;&#x4E09;&#x79CD;&#x7C7B;&#x578B;&#x7684;Sublayer&#x5BF9;Encoder&#x7684;&#x8F93;&#x51FA;&#x5B9E;&#x884C;&#x201C;&#x591A;&#x5934;&#x201D;&#x7684;Attention&#x3002;
+Mask&#x786E;&#x4FDD;&#x4E86;&#x751F;&#x6210;&#x4F4D;&#x7F6E;<script type="math/tex; ">i</script>&#x7684;&#x9884;&#x6D4B;&#x65F6;&#xFF0C;&#x4EC5;&#x4F9D;&#x8D56;&#x5C0F;&#x4E8E;<script type="math/tex; ">i</script>&#x7684;&#x4F4D;&#x7F6E;&#x5904;&#x7684;&#x5DF2;&#x77E5;&#x8F93;&#x51FA;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x628A;&#x540E;&#x9762;&#x4E0D;&#x8BE5;&#x770B;&#x5230;&#x7684;&#x4FE1;&#x606F;&#x5C4F;&#x853D;&#x6389;&#x3002;</p>
+<h6 id="mask-map">Mask Map</h6>
+<center><img src="https://pic3.zhimg.com/80/v2-3c315c4be3eac87af1ed64eead1024ca_720w.jpg" width="30%" height="30%"></center>
+
+<pre class="language-"><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">subsequent_mask</span><span class="hljs-params">(size)</span>:</span>
+    <span class="hljs-comment"># 1*N*N</span>
+    attn_shape = (<span class="hljs-number">1</span>, size, size)
+    subsequent_mask = np.triu(np.ones(attn_shape), k=<span class="hljs-number">1</span>).astype(<span class="hljs-string">&apos;uint8&apos;</span>)
+    <span class="hljs-keyword">return</span> torch.from_numpy(subsequent_mask) == <span class="hljs-number">0</span>
+</code></pre>
+<p>src-attn&#x6A21;&#x5757;&#x7684;&#x8F93;&#x5165;&#x6765;&#x6E90;&#x4E8E;Encoder&#x7684;Key&#x3001;Value&#xFF0C;Decoder&#x4E0A;&#x4E00;&#x5C42;&#x7684;self-attention&#x7684;&#x8F93;&#x51FA;&#x4F5C;&#x4E3A;Query&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DecoderLayer</span><span class="hljs-params">(nn.Module)</span>:</span>
+    <span class="hljs-string">&quot;Decoder is made of self-attn, src-attn, and feed forward (defined below)&quot;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, size, self_attn, src_attn, feed_forward, dropout)</span>:</span>
+        super(DecoderLayer, self).__init__()
+        self.size = size
+        self.self_attn = self_attn
+        self.src_attn = src_attn
+        self.feed_forward = feed_forward
+        self.sublayer = clones(SublayerConnection(size, dropout), <span class="hljs-number">3</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">forward</span><span class="hljs-params">(self, x, memory, src_mask, tgt_mask)</span>:</span>
+        <span class="hljs-string">&quot;Follow Figure 1 (right) for connections.&quot;</span>
+        m = memory
+        x = self.sublayer[<span class="hljs-number">0</span>](x, <span class="hljs-keyword">lambda</span> x: self.self_attn(x, x, x, tgt_mask))
+        x = self.sublayer[<span class="hljs-number">1</span>](x, <span class="hljs-keyword">lambda</span> x: self.src_attn(x, m, m, src_mask))
+        <span class="hljs-keyword">return</span> self.sublayer[<span class="hljs-number">2</span>](x, self.feed_forward)
+</code></pre>
+<h2 id="positional-encoder-embedding">Positional Encoder Embedding</h2>
+<p><script type="math/tex; mode=display">
+PE_{pos,2i}=sin(\frac{pos}{10000^{\frac{2i}{d_{model}}}}) \\
+PE_{pos,2i+1}=cos(\frac{pos}{10000^{\frac{2i}{d_{model}}}}) 
+</script></p>
+<p>&#x5176;&#x4E2D;<script type="math/tex; ">pos</script>&#x662F;&#x4F4D;&#x7F6E;, <script type="math/tex; ">i</script>&#x662F;&#x7EF4;&#x5EA6;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x7684;&#x6BCF;&#x4E2A;&#x7EF4;&#x5EA6;&#x90FD;&#x5BF9;&#x5E94;&#x4E8E;&#x4E00;&#x4E2A;&#x6B63;&#x5F26;&#x66F2;&#x7EBF;,&#x3002;
+&#x5728;Transformer&#x6A21;&#x578B;&#x4E2D;&#xFF0C;dropout=0.1&#x3002;
+&#x5728;Encoder&#x4E0E;Decoder&#x7684;&#x8F93;&#x5165;&#x90E8;&#x5206;&#x90FD;&#x52A0;&#x5165;&#x4E86;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PositionalEncoding</span><span class="hljs-params">(nn.Module)</span>:</span>
+    <span class="hljs-string">&quot;Implement the PE function.&quot;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, d_model, dropout, max_len=<span class="hljs-number">5000</span>)</span>:</span>
+        super(PositionalEncoding, self).__init__()
+        self.dropout = nn.Dropout(p=dropout)
+
+        <span class="hljs-comment"># Compute the positional encodings once in log space.</span>
+        pe = torch.zeros(max_len, d_model) <span class="hljs-comment"># &#x751F;&#x6210;&#x7A7A;&#x4F4D;&#x7F6E;&#x5411;&#x91CF;   max_len*d_model</span>
+        position = torch.arange(<span class="hljs-number">0</span>, max_len).unsqueeze(<span class="hljs-number">1</span>) <span class="hljs-comment"># max_len*1</span>
+        div_term = torch.exp(torch.arange(<span class="hljs-number">0</span>, d_model, <span class="hljs-number">2</span>) * -(math.log(<span class="hljs-number">10000.0</span>) / d_model))
+        pe[:, <span class="hljs-number">0</span>::<span class="hljs-number">2</span>] = torch.sin(position * div_term)
+        pe[:, <span class="hljs-number">1</span>::<span class="hljs-number">2</span>] = torch.cos(position * div_term)
+        pe = pe.unsqueeze(<span class="hljs-number">0</span>) <span class="hljs-comment"># 1*max_len*d_model</span>
+        self.register_buffer(<span class="hljs-string">&apos;pe&apos;</span>, pe) <span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x4E3A;buffer&#xFF08;&#x4E0D;&#x9700;&#x8981;&#x6C42;&#x68AF;&#x5EA6;&#x7684;&#x53C2;&#x6570;&#xFF09;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">forward</span><span class="hljs-params">(self, x)</span>:</span>
+        <span class="hljs-comment"># B*N*d_model + 1*N*d_model --&gt; B*N*d_model</span>
+        x = x + torch.tensor(self.pe[:, :x.size(<span class="hljs-number">1</span>)])
+        <span class="hljs-keyword">return</span> self.dropout(x)
+</code></pre>
+<h2 id="&#x5206;&#x7C7B;&#x5668;">&#x5206;&#x7C7B;&#x5668;</h2>
+<p>&#x5206;&#x7C7B;&#x5668;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;Linear&#x5C42;+Softmax&#x8FDB;&#x884C;&#x5206;&#x7C7B;&#xFF0C;&#x7F6E;&#x4E8E;Decoder&#x4E4B;&#x540E;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Generator</span><span class="hljs-params">(nn.Module)</span>:</span>
+    <span class="hljs-string">&quot;Define standard linear + softmax generation step.&quot;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, d_model, vocab)</span>:</span>
+        super(Generator, self).__init__()
+        self.proj = nn.Linear(d_model, vocab)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">forward</span><span class="hljs-params">(self, x)</span>:</span>
+        <span class="hljs-comment"># B*N*d_model x d_model*voc ==&gt; B*N*voc </span>
+        <span class="hljs-keyword">return</span> F.log_softmax(self.proj(x), dim=<span class="hljs-number">-1</span>)
+</code></pre>
+<h2 id="encoder-decoder">Encoder-Decoder</h2>
+<p>&#x901A;&#x7528;&#x7684;&#x7EC4;&#x7EC7;&#x67B6;&#x6784;&#xFF0C;&#x540C;&#x6837;&#x9002;&#x7528;&#x4E8E;Transformer&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EncoderDecoder</span><span class="hljs-params">(nn.Module)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;
+    A standard Encoder-Decoder architecture. Base for this and many 
+    other models.
+    &quot;&quot;&quot;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, encoder, decoder, src_embed, tgt_embed, generator)</span>:</span>
+        super(EncoderDecoder, self).__init__()
+        self.encoder = encoder
+        self.decoder = decoder
+        self.src_embed = src_embed
+        self.tgt_embed = tgt_embed
+        self.generator = generator
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">forward</span><span class="hljs-params">(self, src, tgt, src_mask, tgt_mask)</span>:</span>
+        <span class="hljs-string">&quot;Take in and process masked src and target sequences.&quot;</span>
+        <span class="hljs-keyword">return</span> self.decode(self.encode(src, src_mask), src_mask,tgt, tgt_mask)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">encode</span><span class="hljs-params">(self, src, src_mask)</span>:</span>
+        <span class="hljs-keyword">return</span> self.encoder(self.src_embed(src), src_mask)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">decode</span><span class="hljs-params">(self, memory, src_mask, tgt, tgt_mask)</span>:</span>
+        <span class="hljs-keyword">return</span> self.decoder(self.tgt_embed(tgt), memory, src_mask, tgt_mask)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">make_model</span><span class="hljs-params">(src_vocab, tgt_vocab, N=<span class="hljs-number">6</span>, 
+               d_model=<span class="hljs-number">512</span>, d_ff=<span class="hljs-number">2048</span>, h=<span class="hljs-number">8</span>, dropout=<span class="hljs-number">0.1</span>)</span>:</span>
+    <span class="hljs-string">&quot;Helper: Construct a model from hyperparameters.&quot;</span>
+    c = copy.deepcopy
+    attn = MultiHeadedAttention(h, d_model)
+    ff = PositionwiseFeedForward(d_model, d_ff, dropout)
+    position = PositionalEncoding(d_model, dropout)
+    model = EncoderDecoder(
+        Encoder(EncoderLayer(d_model, c(attn), c(ff), dropout), N),
+        Decoder(DecoderLayer(d_model, c(attn), c(attn), 
+                             c(ff), dropout), N),
+        nn.Sequential(Embeddings(d_model, src_vocab), c(position)),
+        nn.Sequential(Embeddings(d_model, tgt_vocab), c(position)),
+        Generator(d_model, tgt_vocab))
+
+    <span class="hljs-comment"># This was important from their code. </span>
+    <span class="hljs-comment"># Initialize parameters with Glorot / fan_avg.</span>
+    <span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> model.parameters():
+        <span class="hljs-keyword">if</span> p.dim() &gt; <span class="hljs-number">1</span>:
+            nn.init.xavier_uniform(p)
+    <span class="hljs-keyword">return</span> model
+
+<span class="hljs-comment"># Small example model.</span>
+tmp_model = make_model(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">2</span>)
+</code></pre>
+<h2 id="&#x8BAD;&#x7EC3;">&#x8BAD;&#x7EC3;</h2>
+<h4 id="&#x6784;&#x9020;batch&#x548C;mask">&#x6784;&#x9020;Batch&#x548C;Mask</h4>
+<pre class="language-"><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Batch</span>:</span>
+    <span class="hljs-string">&quot;Object for holding a batch of data with mask during training.&quot;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, src, trg=None, pad=<span class="hljs-number">0</span>)</span>:</span>
+        <span class="hljs-comment"># B*N </span>
+        self.src = src
+        self.src_mask = (src != pad).unsqueeze(<span class="hljs-number">-2</span>) <span class="hljs-comment"># B*1*N</span>
+        <span class="hljs-keyword">if</span> trg <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">None</span>:
+            self.trg = trg[:, :<span class="hljs-number">-1</span>] <span class="hljs-comment"># B*(N-1) Decoder&#x8F93;&#x5165;</span>
+            self.trg_y = trg[:, <span class="hljs-number">1</span>:] <span class="hljs-comment"># B*(N-1) Decoder&#x8F93;&#x51FA;</span>
+            self.trg_mask = self.make_std_mask(self.trg, pad)
+            self.ntokens = (self.trg_y != pad).data.sum()
+
+<span class="hljs-meta">    @staticmethod</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">make_std_mask</span><span class="hljs-params">(tgt, pad)</span>:</span>
+        <span class="hljs-string">&quot;Create a mask to hide padding and future words.&quot;</span>
+        tgt_mask = (tgt != pad).unsqueeze(<span class="hljs-number">-2</span>) 
+        <span class="hljs-comment"># B*1*N &amp; 1*N*N ==&gt; B*N*N</span>
+        tgt_mask = tgt_mask &amp; torch.tensor(subsequent_mask(tgt.size(<span class="hljs-number">-1</span>)).type_as(tgt_mask.data))
+        <span class="hljs-keyword">return</span> tgt_mask
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="rnn.html" class="navigation navigation-prev " aria-label="Previous page: 循环神经网络">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="pytorch.html" class="navigation navigation-next " aria-label="Next page: PyTorch Tutorial">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Transformer","level":"1.3.3","depth":2,"next":{"title":"PyTorch Tutorial","level":"1.3.4","depth":2,"path":"book/tutorial/ml/pytorch.md","ref":"book/tutorial/ml/pytorch.md","articles":[]},"previous":{"title":"循环神经网络","level":"1.3.2","depth":2,"path":"book/tutorial/ml/rnn.md","ref":"book/tutorial/ml/rnn.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","-lunr","-sharing","search-pro","advanced-emoji","mermaid-gb3","chapter-fold","expandable-chapters","highlight","emphasize","prism","mathjax","livereload"],"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"emphasize":{},"livereload":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"book/tutorial/ml/transformer.md","mtime":"2021-09-12T13:38:12.516Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-22T08:02:58.261Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

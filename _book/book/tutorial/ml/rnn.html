@@ -1,0 +1,578 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>循环神经网络 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="transformer.html" />
+    
+    
+    <link rel="prev" href="basic.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introducation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../markdown.html">
+            
+                <a href="../markdown.html">
+            
+                    
+                    MarkDown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    机器学习基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="basic.html">
+            
+                <a href="basic.html">
+            
+                    
+                    什么是机器学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="rnn.html">
+            
+                <a href="rnn.html">
+            
+                    
+                    循环神经网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="transformer.html">
+            
+                <a href="transformer.html">
+            
+                    
+                    Transformer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="pytorch.html">
+            
+                <a href="pytorch.html">
+            
+                    
+                    PyTorch Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="allennlp.html">
+            
+                <a href="allennlp.html">
+            
+                    
+                    AllenNLP Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="snorkel.html">
+            
+                <a href="snorkel.html">
+            
+                    
+                    Snorkel Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="metric.html">
+            
+                <a href="metric.html">
+            
+                    
+                    Metric
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="optimizer.html">
+            
+                <a href="optimizer.html">
+            
+                    
+                    Optimizer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="loss.html">
+            
+                <a href="loss.html">
+            
+                    
+                    Loss
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Paper阅读
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../papers/GlobalPointer.html">
+            
+                <a href="../../papers/GlobalPointer.html">
+            
+                    
+                    GlobalPointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../papers/RoPE.html">
+            
+                <a href="../../papers/RoPE.html">
+            
+                    
+                    RoPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../papers/多标签CE.html">
+            
+                <a href="../../papers/多标签CE.html">
+            
+                    
+                    多标签CE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >循环神经网络</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="rnn-&#x5FAA;&#x73AF;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;">RNN &#x5FAA;&#x73AF;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;</h1>
+<blockquote>
+<p>&#x4E3A;&#x4E86;&#x5904;&#x7406;&#x65F6;&#x5E8F;&#x6570;&#x636E;&#x5E76;&#x5229;&#x7528;&#x5176;&#x5386;&#x53F2;&#x4FE1;&#x606F;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8BA9;&#x7F51;&#x7EDC;&#x5177;&#x6709;<strong>&#x77ED;&#x671F;&#x8BB0;&#x5FC6;</strong>&#x80FD;&#x529B;&#xFF0C;&#x800C;&#x524D;&#x9988;&#x7F51;&#x7EDC;&#x662F;&#x4E00;&#x79CD;&#x9759;&#x6001;&#x7F51;&#x7EDC;&#xFF0C;&#x4E0D;&#x5177;&#x5907;&#x8FD9;&#x79CD;&#x8BB0;&#x5FC6;&#x80FD;&#x529B;&#x3002;</p>
+</blockquote>
+<h4 id="&#x7ECF;&#x5178;&#x6A21;&#x578B;">&#x7ECF;&#x5178;&#x6A21;&#x578B;</h4>
+<h6 id="simple-rnn">Simple RNN</h6>
+<p><img src="img/rnn1.png" alt="SimpleRNN"></p>
+<p><script type="math/tex; mode=display">
+h_t=f(Uh_{t-1}+Wx_t+b)
+</script></p>
+<h6 id="lstm">LSTM</h6>
+<p><img src="img/lstm.png" alt="LSTM">
+&#x5B66;&#x4E60;&#x7684;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;<strong>&#x957F;&#x65F6;&#x8BB0;&#x5FC6;</strong>&#xFF0C;<script type="math/tex; ">h_t</script>&#x770B;&#x4F5C;&#x77ED;&#x65F6;&#x8BB0;&#x5FC6;&#xFF08;&#x5916;&#x90E8;&#x8BB0;&#x5FC6;&#x72B6;&#x6001;&#xFF09;&#xFF0C;<script type="math/tex; ">c_t</script>&#x770B;&#x4F5C;&#x6BD4;&#x8F83;&#x957F;&#x7684;&#x77ED;&#x65F6;&#x8BB0;&#x5FC6;&#xFF08;&#x5185;&#x90E8;&#x8BB0;&#x5FC6;&#x72B6;&#x6001;&#xFF09;&#xFF0C;&#x5373;Long Short-Term Memory&#x3002;</p>
+<p>LSTM&#x6267;&#x884C;&#x7684;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li>&#x5229;&#x7528;&#x4E0A;&#x4E00;&#x65F6;&#x523B;&#x7684;&#x5916;&#x90E8;&#x72B6;&#x6001;<script type="math/tex; ">h_{t-1}</script>&#x548C;&#x5F53;&#x524D;&#x65F6;&#x523B;&#x7684;&#x8F93;&#x5165;<script type="math/tex; ">x_t</script>&#x8BA1;&#x7B97;&#x51FA;&#x4E09;&#x4E2A;&#x95E8;&#xFF08;&#x8F93;&#x5165;&#x95E8;&#x3001;&#x8F93;&#x51FA;&#x95E8;&#x3001;&#x9057;&#x5FD8;&#x95E8;&#xFF09;&#x4EE5;&#x53CA;&#x5019;&#x9009;&#x72B6;&#x6001;<script type="math/tex; ">\widetilde{c}_t</script>&#x3002;</li>
+<li>&#x7ED3;&#x5408;&#x9057;&#x5FD8;&#x95E8;<script type="math/tex; ">f_t</script>&#x548C;&#x8F93;&#x5165;&#x95E8;<script type="math/tex; ">i_t</script>&#x66F4;&#x65B0;&#x8BB0;&#x5FC6;&#x5355;&#x5143;<script type="math/tex; ">c_t</script>&#x3002;</li>
+<li>&#x7ED3;&#x5408;&#x8F93;&#x51FA;&#x95E8;<script type="math/tex; ">o_t</script>&#xFF0C;&#x5C06;&#x5185;&#x90E8;&#x72B6;&#x6001;&#x7684;&#x4FE1;&#x606F;&#x4F20;&#x9012;&#x7ED9;&#x5916;&#x90E8;&#x72B6;&#x6001;<script type="math/tex; ">h_t</script>&#x3002;</li>
+</ol>
+<p><script type="math/tex; mode=display">
+\begin{align}
+
+\begin{bmatrix}
+\widetilde{c}_t\\ 
+o_t\\ 
+i_t\\ 
+f_t
+\end{bmatrix}&= 
+\begin{bmatrix}
+\tanh\\ 
+\sigma\\ 
+\sigma\\ 
+\sigma
+\end{bmatrix}\left ( 
+\mathbf{W}\begin{bmatrix}
+x_t\\ 
+h_{t-1}
+\end{bmatrix} + b \right ) \\
+c_t&=f_t\odot c_{t-1}+i_t\odot\widetilde{c}_t\\
+h_t&=o_t\odot\tanh\left ( c_t \right )
+\end{align}
+</script></p>
+<blockquote>
+<p>&#x8BAD;&#x7EC3;&#x7ECF;&#x9A8C; : &#x9057;&#x5FD8;&#x95E8;&#x7684;&#x53C2;&#x6570;&#x521D;&#x59CB;&#x503C;&#x4E00;&#x822C;&#x90FD;&#x8BBE;&#x7F6E;&#x5F97;&#x6BD4;&#x8F83;&#x5927;&#xFF0C;&#x5176;&#x504F;&#x7F6E;&#x5411;&#x91CF;<script type="math/tex; ">b_f</script>&#x8BBE;&#x4E3A;1&#x6216;2&#x3002;&#x8FC7;&#x5C0F;&#x7684;&#x503C;&#x610F;&#x5473;&#x7740;&#x521A;&#x8BAD;&#x7EC3;&#x65F6;&#x9057;&#x5FD8;&#x95E8;&#x7684;&#x6982;&#x7387;&#x503C;&#x8FC7;&#x5C0F;&#xFF0C;&#x5927;&#x90E8;&#x5206;&#x4FE1;&#x606F;&#x90FD;&#x4F1A;&#x4E22;&#x5931;&#xFF0C;&#x800C;&#x4E14;&#x68AF;&#x5EA6;&#x4E5F;&#x4F1A;&#x975E;&#x5E38;&#x5C0F;&#xFF0C;&#x4ECE;&#x800C;&#x5BFC;&#x81F4;&#x68AF;&#x5EA6;&#x6D88;&#x5931;&#x95EE;&#x9898;&#x3002;</p>
+</blockquote>
+<p> LSTM&#x53D8;&#x4F53;</p>
+<ul>
+<li>&#x65E0;&#x9057;&#x5FD8;&#x95E8;&#x7684;<script type="math/tex; ">LSTM_{1997}</script>
+<script type="math/tex; mode=display">
+ c_t=c_{t-1}+i_t\odot\widetilde{c}_t
+ </script></li>
+<li><p>peephole</p>
+<p>&#x8F93;&#x5165;&#x4E0D;&#x6B62;&#x4F9D;&#x8D56;&#x4E0A;&#x4E00;&#x65F6;&#x523B;&#x7684;&#x9690;&#x72B6;&#x6001;<script type="math/tex; ">h_{t-1}</script>&#xFF0C;&#x4E5F;&#x4F9D;&#x8D56;&#x4E0A;&#x4E00;&#x65F6;&#x523B;&#x7684;&#x8BB0;&#x5FC6;&#x5355;&#x5143;<script type="math/tex; ">c_{t-1}</script>
+<script type="math/tex; mode=display">
+ \begin{align}
+ i_t&=\sigma\left ( W_ix_t+U_ih_{t-1}+V_ic_{t-1}+b_i\right ) \\
+ f_t&=\sigma\left ( W_fx_t+U_fh_{t-1}+V_fc_{t-1}+b_f\right ) \\
+ o_t&=\sigma\left ( W_ox_t+U_oh_{t-1}+V_oc_t+b_o\right ) 
+ \end{align}
+ </script></p>
+</li>
+</ul>
+<ul>
+<li>&#x8026;&#x5408;&#x8F93;&#x5165;&#x95E8;&#x548C;&#x9057;&#x5FD8;&#x95E8;
+<script type="math/tex; mode=display">
+\begin{align}
+c_t&=(1-i_t)\odot c_{t-1} +i_t\odot\widetilde{c}_t
+\end{align}
+</script></li>
+</ul>
+<h6 id="gru">GRU</h6>
+<p><img src="img/gru.png" alt="gru">
+&#x4E0D;&#x5F15;&#x5165;&#x989D;&#x5916;&#x7684;&#x8BB0;&#x5FC6;&#x5355;&#x5143;&#xFF0C;&#x800C;&#x662F;&#x5F15;&#x5165;&#x66F4;&#x65B0;&#x95E8;&#x63A7;&#x5236;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x9700;&#x8981;&#x4ECE;&#x5386;&#x53F2;&#x72B6;&#x6001;&#x4E2D;&#x4FDD;&#x7559;&#x591A;&#x5C11;&#x4FE1;&#x606F;&#x4EE5;&#x53CA;&#x9700;&#x8981;&#x4ECE;&#x5019;&#x9009;&#x72B6;&#x6001;&#x4E2D;&#x63A5;&#x53D7;&#x591A;&#x5C11;&#x65B0;&#x4FE1;&#x606F;&#x3002;
+GRU&#x6267;&#x884C;&#x7684;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;:</p>
+<ol>
+<li>&#x5229;&#x7528;&#x4E0A;&#x4E00;&#x65F6;&#x523B;&#x7684;&#x5916;&#x90E8;&#x72B6;&#x6001;<script type="math/tex; ">h_{t-1}</script>&#x548C;&#x5F53;&#x524D;&#x65F6;&#x523B;&#x7684;&#x8F93;&#x5165;<script type="math/tex; ">x_t</script>&#x8BA1;&#x7B97;&#x51FA;&#x4E24;&#x4E2A;&#x95E8;&#xFF08;&#x66F4;&#x65B0;&#x95E8;&#x3001;&#x91CD;&#x7F6E;&#x95E8;&#xFF09;&#x3002;</li>
+<li>&#x8BA1;&#x7B97;&#x5019;&#x9009;&#x72B6;&#x6001;<script type="math/tex; ">\widetilde{h}_t</script>&#xFF0C;&#x91CD;&#x7F6E;&#x95E8;&#x7528;&#x6765;&#x63A7;&#x5236;&#x5019;&#x9009;&#x72B6;&#x6001;<script type="math/tex; ">\widetilde{h}_t</script>&#x7684;&#x8BA1;&#x7B97;&#x4F9D;&#x8D56;&#x591A;&#x5C11;&#x4E0A;&#x4E00;&#x65F6;&#x523B;&#x7684;&#x72B6;&#x6001;<script type="math/tex; ">h_{t-1}</script>&#x3002;</li>
+<li>&#x4F7F;&#x7528;&#x66F4;&#x65B0;&#x95E8;&#x8FDB;&#x884C;&#x72B6;&#x6001;&#x66F4;&#x65B0;&#x3002; 
+<script type="math/tex; mode=display">
+\begin{align}
+z_t&=\sigma\left ( W_zx_t+U_zh_{t-1}+b_z\right) \\
+r_t&=\sigma\left ( W_rx_t+U_rh_{t-1}+b_r\right) \\
+\widetilde{h}_t&=\tanh\left ( W_hx_t+U_h(r_t\odot h_{t-1})+b_h \right ) \\
+h_t&=z_t\odot h_{t-1} + (1-z_t)\odot \widetilde{h}_t
+\end{align}
+</script></li>
+</ol>
+<h4 id="&#x6DF1;&#x5C42;&#x6A21;&#x578B;">&#x6DF1;&#x5C42;&#x6A21;&#x578B;</h4>
+<h6 id="&#x5806;&#x53E0;&#x5FAA;&#x73AF;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;">&#x5806;&#x53E0;&#x5FAA;&#x73AF;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;</h6>
+<p><img src="img/rnn5.png" alt="SimpleRNN"></p>
+<h6 id="&#x53CC;&#x5411;&#x5FAA;&#x73AF;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;">&#x53CC;&#x5411;&#x5FAA;&#x73AF;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;</h6>
+<p><img src="img/rnn6.png" alt="SimpleRNN"></p>
+<h4 id="&#x5E94;&#x7528;&#x6846;&#x67B6;">&#x5E94;&#x7528;&#x6846;&#x67B6;</h4>
+<h6 id="&#x5E8F;&#x5217;&#x5230;&#x7C7B;">&#x5E8F;&#x5217;&#x5230;&#x7C7B;</h6>
+<p><img src="img/rnn2.png" alt="SimpleRNN"></p>
+<h6 id="&#x540C;&#x6B65;&#x7684;&#x5E8F;&#x5217;&#x5230;&#x5E8F;&#x5217;">&#x540C;&#x6B65;&#x7684;&#x5E8F;&#x5217;&#x5230;&#x5E8F;&#x5217;</h6>
+<p><img src="img/rnn3.png" alt="SimpleRNN"></p>
+<h6 id="&#x5F02;&#x6B65;&#x7684;&#x5E8F;&#x5217;&#x5230;&#x5E8F;&#x5217;">&#x5F02;&#x6B65;&#x7684;&#x5E8F;&#x5217;&#x5230;&#x5E8F;&#x5217;</h6>
+<p><img src="img/rnn4.png" alt="SimpleRNN"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="basic.html" class="navigation navigation-prev " aria-label="Previous page: 什么是机器学习">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="transformer.html" class="navigation navigation-next " aria-label="Next page: Transformer">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"循环神经网络","level":"1.3.2","depth":2,"next":{"title":"Transformer","level":"1.3.3","depth":2,"path":"book/tutorial/ml/transformer.md","ref":"book/tutorial/ml/transformer.md","articles":[]},"previous":{"title":"什么是机器学习","level":"1.3.1","depth":2,"path":"book/tutorial/ml/basic.md","ref":"book/tutorial/ml/basic.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","-lunr","-sharing","search-pro","advanced-emoji","mermaid-gb3","chapter-fold","expandable-chapters","highlight","emphasize","prism","mathjax","livereload"],"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"emphasize":{},"livereload":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"book/tutorial/ml/rnn.md","mtime":"2021-09-12T13:38:12.436Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-22T08:02:58.261Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

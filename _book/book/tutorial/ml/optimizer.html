@@ -1,0 +1,804 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Optimizer · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="loss.html" />
+    
+    
+    <link rel="prev" href="metric.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introducation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../markdown.html">
+            
+                <a href="../markdown.html">
+            
+                    
+                    MarkDown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    机器学习基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="basic.html">
+            
+                <a href="basic.html">
+            
+                    
+                    什么是机器学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="rnn.html">
+            
+                <a href="rnn.html">
+            
+                    
+                    循环神经网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="transformer.html">
+            
+                <a href="transformer.html">
+            
+                    
+                    Transformer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="pytorch.html">
+            
+                <a href="pytorch.html">
+            
+                    
+                    PyTorch Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="allennlp.html">
+            
+                <a href="allennlp.html">
+            
+                    
+                    AllenNLP Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="snorkel.html">
+            
+                <a href="snorkel.html">
+            
+                    
+                    Snorkel Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="metric.html">
+            
+                <a href="metric.html">
+            
+                    
+                    Metric
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.8" data-path="optimizer.html">
+            
+                <a href="optimizer.html">
+            
+                    
+                    Optimizer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="loss.html">
+            
+                <a href="loss.html">
+            
+                    
+                    Loss
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Paper阅读
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../papers/GlobalPointer.html">
+            
+                <a href="../../papers/GlobalPointer.html">
+            
+                    
+                    GlobalPointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../papers/RoPE.html">
+            
+                <a href="../../papers/RoPE.html">
+            
+                    
+                    RoPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../papers/多标签CE.html">
+            
+                <a href="../../papers/多标签CE.html">
+            
+                    
+                    多标签CE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Optimizer</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><div align="center"><img src="https://pic4.zhimg.com/v2-ed8f70ed5bb8e8a5ba4dd0cf99c0f557_b.webp" alt=""></div></p>
+<h1 id="optimizer"><center>Optimizer</center></h1>
+<p><a href="https://blog.csdn.net/google19890102/article/details/69942970" target="_blank">&#x53C2;&#x8003;&#x6587;&#x7AE0;</a></p>
+<blockquote>
+<p>finding the parameters <script type="math/tex; ">\theta </script> of a neural network that significantly reduce a cost function <script type="math/tex; ">J(\theta) </script> , which typically includes a performance measure evaluated on the entire training set as well as additional regularization terms</p>
+</blockquote>
+<h3 id="1&#x3001;-&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x6CD5;-gradient-descent">1&#x3001; &#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x6CD5; Gradient Descent</h3>
+<p><script type="math/tex; mode=display">
+\theta_{t+1}=\theta_t - \alpha \cdot \triangledown J(\theta)
+</script></p>
+<h6 id="&#x7279;&#x70B9;">&#x7279;&#x70B9;</h6>
+<ul>
+<li>&#x5B66;&#x4E60;&#x7387;&#x4E0D;&#x597D;&#x9009;&#x62E9;&#xFF0C;&#x8FC7;&#x4F4E;&#x6536;&#x655B;&#x7F13;&#x6162;&#xFF0C;&#x8FC7;&#x9AD8;&#x6CE2;&#x52A8;&#x592A;&#x5927;</li>
+<li>&#x6240;&#x6709;&#x53C2;&#x6570;&#x4F7F;&#x7528;&#x540C;&#x6837;&#x7684;&#x5B66;&#x4E60;&#x7387;</li>
+<li>&#x5BB9;&#x6613;&#x6536;&#x655B;&#x5230;&#x5C40;&#x90E8;&#x6700;&#x4F18;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x56F0;&#x5728;&#x978D;&#x70B9;&#xFF08;&#x68AF;&#x5EA6;&#x4E3A;0&#xFF09;</li>
+</ul>
+<h5 id="batch-gradient-descent-bgd">Batch Gradient Descent (BGD)</h5>
+<ul>
+<li>n&#x8868;&#x793A;&#x6240;&#x6709;&#x6837;&#x672C;&#x6570;&#x91CF;</li>
+</ul>
+<p><script type="math/tex; mode=display">
+\theta_{t+1}=\theta_t - \alpha \cdot \frac{1}{n}\sum_{i=1}^{n} \triangledown J_i(\theta,x^i,y^i)
+</script></p>
+<h5 id="stochastic-gradient-descent-sgd">Stochastic Gradient Descent (SGD)</h5>
+<ul>
+<li>&#x6BCF;&#x4E00;&#x4E2A;step&#x4EC5;&#x4E00;&#x4E2A;&#x6837;&#x672C;&#xFF0C;&#x73B0;&#x5B9E;&#x4E2D;&#x4E00;&#x822C;&#x6307;mini-batch</li>
+</ul>
+<p><script type="math/tex; mode=display">
+\theta_{t+1}=\theta_t - \alpha \cdot \triangledown J_i(\theta,x^i,y^i)
+</script></p>
+<h5 id="mini-batch-gradient-descent">Mini-Batch Gradient Descent</h5>
+<ul>
+<li>m&#x8868;&#x793A;&#x4E00;&#x4E2A;batch size</li>
+</ul>
+<p><script type="math/tex; mode=display">
+\theta_{t+1}=\theta_t - \alpha \cdot \frac{1}{m}\sum_{i=1}^{m}\triangledown J_i(\theta,x^i,y^i)
+</script></p>
+<h3 id="2&#x3001;&#x52A8;&#x91CF;&#x6CD5;">2&#x3001;&#x52A8;&#x91CF;&#x6CD5;</h3>
+<ul>
+<li><script type="math/tex; ">\mu</script> &#x52A8;&#x91CF;&#x56E0;&#x5B50;&#xFF08;&#x8870;&#x51CF;&#x7CFB;&#x6570;&#xFF09;&#xFF0C;&#x8868;&#x793A;&#x4FDD;&#x6301;&#x7684;&#x52A8;&#x91CF;&#x6BD4;&#x91CD;&#xFF0C;&#x901A;&#x5E38;&#x53D6;0.9</li>
+<li><script type="math/tex; ">m_t</script> &#x6307;t&#x65F6;&#x523B;&#x7684;&#x52A8;&#x91CF;</li>
+</ul>
+<h6 id="&#x7279;&#x70B9;">&#x7279;&#x70B9;</h6>
+<ul>
+<li>&#x52A0;&#x5FEB;&#x6536;&#x655B;&#x5E76;&#x4E14;&#x51CF;&#x5C11;&#x52A8;&#x8361;</li>
+</ul>
+<h5 id="momentum">Momentum</h5>
+<p><script type="math/tex; mode=display">
+\begin{align} 
+m_{t+1} &= \mu \cdot m_t + \alpha \cdot \triangledown J(\theta) \\ 
+\theta_{t+1} &= \theta_t - m_{t+1}
+\end{align} 
+</script></p>
+<h5 id="nag&#xFF08;nesterov-accelerated-gradient&#xFF09;">NAG&#xFF08;Nesterov accelerated gradient&#xFF09;</h5>
+<ul>
+<li>&#x5728;&#x539F;&#x59CB;&#x5F62;&#x5F0F;&#x4E2D;&#xFF0C;NAG&#x76F8;&#x5BF9;&#x4E8E;Momentum&#x7684;&#x6539;&#x8FDB;&#x5728;&#x4E8E;&#xFF0C;&#x4EE5;&#x201C;&#x5411;&#x524D;&#x770B;&#x201D;&#x770B;&#x5230;&#x7684;&#x68AF;&#x5EA6;&#x800C;&#x4E0D;&#x662F;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x68AF;&#x5EA6;&#x53BB;&#x66F4;&#x65B0;&#x3002;&#x7ECF;&#x8FC7;&#x53D8;&#x6362;&#x4E4B;&#x540E;&#x7684;&#x7B49;&#x6548;&#x5F62;&#x5F0F;&#x4E2D;&#xFF0C;NAG&#x7B97;&#x6CD5;&#x76F8;&#x5BF9;&#x4E8E;Momentum&#x591A;&#x4E86;&#x4E00;&#x4E2A;&#x672C;&#x6B21;&#x68AF;&#x5EA6;&#x76F8;&#x5BF9;&#x4E0A;&#x6B21;&#x68AF;&#x5EA6;&#x7684;&#x53D8;&#x5316;&#x91CF;&#xFF0C;&#x8FD9;&#x4E2A;&#x53D8;&#x5316;&#x91CF;&#x672C;&#x8D28;&#x4E0A;&#x662F;&#x5BF9;&#x76EE;&#x6807;&#x51FD;&#x6570;&#x4E8C;&#x9636;&#x5BFC;&#x7684;&#x8FD1;&#x4F3C;&#x3002;&#x7531;&#x4E8E;&#x5229;&#x7528;&#x4E86;&#x4E8C;&#x9636;&#x5BFC;&#x7684;&#x4FE1;&#x606F;&#xFF0C;NAG&#x7B97;&#x6CD5;&#x624D;&#x4F1A;&#x6BD4;Momentum&#x5177;&#x6709;&#x66F4;&#x5FEB;&#x7684;&#x6536;&#x655B;&#x901F;&#x5EA6;
+<script type="math/tex; mode=display">
+\begin{align} 
+m_{t+1} &= \mu \cdot m_t + \alpha \cdot \triangledown J(\theta - \mu \cdot m_t) \\ 
+\theta_{t+1} &= \theta_t - m_{t+1} 
+\end{align} 
+</script></li>
+</ul>
+<h3 id="3&#x3001;&#x81EA;&#x9002;&#x5E94;&#x5B66;&#x4E60;&#x7387;&#x7B97;&#x6CD5;">3&#x3001;&#x81EA;&#x9002;&#x5E94;&#x5B66;&#x4E60;&#x7387;&#x7B97;&#x6CD5;</h3>
+<ul>
+<li><script type="math/tex; ">n_t</script> &#x68AF;&#x5EA6;&#x7D2F;&#x8BA1;&#x53D8;&#x91CF;</li>
+<li><script type="math/tex; ">\varepsilon</script> &#x6781;&#x5C0F;&#x5E38;&#x91CF;&#x503C;&#x9632;&#x6B62;&#x5206;&#x6BCD;&#x4E3A;0&#xFF0C;&#x4E00;&#x822C;&#x8BBE;&#x7F6E; 10e-8</li>
+</ul>
+<h5 id="adagrad">Adagrad</h5>
+<ul>
+<li><script type="math/tex; ">\delta</script> &#x5168;&#x5C40;&#x5B66;&#x4E60;&#x7387;&#xFF0C;&#x4E00;&#x822C;&#x8BBE;&#x7F6E; 0.01</li>
+</ul>
+<h6 id="&#x7279;&#x70B9;">&#x7279;&#x70B9;</h6>
+<ul>
+<li>&#x4F5C;&#x4E3A;&#x7EA6;&#x675F;&#x9879;<script type="math/tex; ">\frac{1}{\sqrt{\sum_{i=0}^{t}g_i^2 +\varepsilon }}</script>&#xFF0C;&#x968F;&#x7740;&#x68AF;&#x5EA6;&#x7D2F;&#x8BA1;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#xFF0C;&#x5B66;&#x4E60;&#x7387;&#x88AB;&#x8870;&#x51CF;&#x7684;&#x8D8A;&#x591A;&#xFF0C;&#x4E2D;&#x540E;&#x671F;&#x53C2;&#x6570;&#x66F4;&#x65B0;&#x91CF;&#x53EF;&#x80FD;&#x8D8B;&#x8FD1;&#x4E8E;0&#xFF0C;&#x65E0;&#x6CD5;&#x5B66;&#x4E60;&#x3002;</li>
+<li>&#x4ECD;&#x7136;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x5168;&#x5C40;&#x5B66;&#x4E60;&#x7387;<script type="math/tex; ">\delta</script>&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x8FC7;&#x5927;&#x4F1A;&#x4F7F;&#x7EA6;&#x675F;&#x9879;&#x8FC7;&#x4E8E;&#x654F;&#x611F;&#xFF0C;&#x5BF9;&#x68AF;&#x5EA6;&#x8C03;&#x8282;&#x592A;&#x5927;&#x3002;</li>
+</ul>
+<p><script type="math/tex; mode=display">
+\begin{align} g &= \triangledown_{\theta} J(\theta) \\ 
+n_t &= n_{t-1} + g^2 \\ 
+\triangle \theta &= \frac{\delta}{\sqrt{n_t + \varepsilon}}\cdot g \\ 
+\theta &= \theta - \triangle \theta 
+\end{align} 
+</script></p>
+<h5 id="rmsprop">RMSprop</h5>
+<ul>
+<li><script type="math/tex; ">\delta</script> &#x5168;&#x5C40;&#x5B66;&#x4E60;&#x7387;&#xFF0C;&#x4E00;&#x822C;&#x8BBE;&#x7F6E; 0.001</li>
+<li><script type="math/tex; ">\nu </script> &#x8870;&#x51CF;&#x7CFB;&#x6570;&#xFF0C;&#x4E00;&#x822C;&#x8BBE;&#x7F6E; 0.9</li>
+</ul>
+<h6 id="&#x7279;&#x70B9;">&#x7279;&#x70B9;</h6>
+<ul>
+<li>&#x4FEE;&#x6539;&#x4E86;AdaGrad&#x7684;&#x68AF;&#x5EA6;&#x5E73;&#x65B9;&#x548C;&#x7D2F;&#x52A0;&#x4E3A;&#x6307;&#x6570;&#x52A0;&#x6743;&#x7684;&#x79FB;&#x52A8;&#x5E73;&#x5747;&#xFF0C;&#x4F7F;&#x5F97;&#x5176;&#x5728;&#x975E;&#x51F8;&#x8BBE;&#x5B9A;&#x4E0B;&#x6548;&#x679C;&#x66F4;&#x597D;&#x3002;</li>
+<li>RMSprop&#x4F9D;&#x7136;&#x4F9D;&#x8D56;&#x4E8E;&#x5168;&#x5C40;&#x5B66;&#x4E60;&#x7387;<script type="math/tex; ">\rho</script></li>
+<li>&#x9002;&#x5408;&#x5904;&#x7406;&#x975E;&#x5E73;&#x7A33;&#x76EE;&#x6807;(&#x5305;&#x62EC;&#x5B63;&#x8282;&#x6027;&#x548C;&#x5468;&#x671F;&#x6027;)&#x2014;&#x2014;&#x5BF9;&#x4E8E;RNN&#x6548;&#x679C;&#x5F88;&#x597D;</li>
+</ul>
+<p><script type="math/tex; mode=display">
+\begin{align} g &= \triangledown_{\theta} J(\theta) \\ 
+n_t &= \nu \cdot n_{t-1} + (1-\nu) \cdot g^2 \\ 
+\triangle\theta &= \frac{\delta}{\sqrt{n_t + \varepsilon}}\cdot g \\ 
+\theta &= \theta - \triangle \theta \end{align} 
+</script></p>
+<h5 id="adam-adamw--huggingfaceadamw">Adam (AdamW , HuggingfaceAdamW)</h5>
+<ul>
+<li><script type="math/tex; ">\delta</script> &#x5168;&#x5C40;&#x5B66;&#x4E60;&#x7387;&#xFF0C;&#x4E00;&#x822C;&#x8BBE;&#x7F6E; 0.001</li>
+<li><script type="math/tex; ">\mu </script> &#x63A7;&#x5236;1&#x9636;&#x52A8;&#x91CF;&#xFF0C;&#x4E00;&#x822C;&#x8BBE;&#x7F6E; 0.9</li>
+<li><script type="math/tex; ">\nu </script> &#x63A7;&#x5236;2&#x9636;&#x52A8;&#x91CF;&#xFF0C;&#x4E00;&#x822C;&#x8BBE;&#x7F6E; 0.999</li>
+<li><script type="math/tex; ">w </script> AdamW&#x53C2;&#x6570; - weight decay &#xFF0C;&#x4E00;&#x822C;&#x8BBE;&#x7F6E; 0.01</li>
+</ul>
+<h6 id="&#x7279;&#x70B9;">&#x7279;&#x70B9;</h6>
+<ul>
+<li>&#x7ED3;&#x5408;&#x4E86;Adagrad&#x5584;&#x4E8E;&#x5904;&#x7406;&#x7A00;&#x758F;&#x68AF;&#x5EA6;&#x548C;RMSprop&#x5584;&#x4E8E;&#x5904;&#x7406;&#x975E;&#x5E73;&#x7A33;&#x76EE;&#x6807;&#x7684;&#x4F18;&#x70B9;</li>
+<li>&#x81EA;&#x52A8;&#x8C03;&#x6574;&#x53C2;&#x6570;&#x7684;&#x5B66;&#x4E60;&#x7387;</li>
+<li>&#x4E5F;&#x9002;&#x7528;&#x4E8E;&#x5927;&#x591A;&#x975E;&#x51F8;&#x4F18;&#x5316; - &#x9002;&#x7528;&#x4E8E;&#x5927;&#x6570;&#x636E;&#x96C6;&#x548C;&#x9AD8;&#x7EF4;&#x7A7A;&#x95F4;</li>
+<li>AdamW&#x76F8;&#x5F53;&#x4E8E;&#x5728;&#x539F;Loss&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x6DFB;&#x52A0;&#x4E86;L2 Norm</li>
+<li>HuggingFace-AdamW&#x6709;&#x4E00;&#x70B9;&#x533A;&#x522B;&#xFF0C;<script type="math/tex; ">w</script>&#x7CFB;&#x6570;&#x540E;&#x7684;&#x53C2;&#x6570;&#x4F7F;&#x7528;&#x7684;&#x672A;&#x6DFB;&#x52A0;L2 Norm&#x7684;<script type="math/tex; ">\theta_{t+1}</script> </li>
+</ul>
+<p><script type="math/tex; mode=display">
+\begin{align} 
+g &= \triangledown_{\theta} J(\theta) \\ 
+m_t &= \mu \cdot m_{t-1} + (1-\mu) \cdot g \\ 
+n_t &= \nu \cdot n_{t-1} + (1-\nu) \cdot g^2 \\ 
+\hat{m_t} &= \frac{m_t}{1-\mu^t} \\ 
+\hat{n_t} &= \frac{n_t}{1-\nu^t} \\ 
+\triangle \theta &= \frac{\delta}{\sqrt{\hat{n_t} +\varepsilon}}\cdot \hat{m_t} \\ 
+\triangle \theta &= \delta \cdot (\frac{1}{\sqrt{\hat{n_t} + \varepsilon}}\cdot \hat{m_t} + w\theta_t )【AdamW】\\ 
+\theta_{t+1} &= \theta_t - \triangle \theta 
+\end{align} 
+</script></p>
+<h3 id="&#x66F4;&#x591A;&#x65B9;&#x6CD5;">&#x66F4;&#x591A;&#x65B9;&#x6CD5;</h3>
+<h5 id="lookahead"><a href="https://mp.weixin.qq.com/s/3J-28xd0pyToSy8zzKs1RA" target="_blank">lookahead</a></h5>
+<h5 id="&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x6539;&#x53D8;&#x5B66;&#x4E60;&#x7387;&#x7684;&#x65B9;&#x6CD5;-noam"><a href="http://nlp.seas.harvard.edu/2018/04/03/attention.html#optimizer" target="_blank">&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x6539;&#x53D8;&#x5B66;&#x4E60;&#x7387;&#x7684;&#x65B9;&#x6CD5; noam</a></h5>
+<p><div align="center"><img src="http://nlp.seas.harvard.edu/images/the-annotated-transformer_69_0.png" alt=""></div></p>
+<p><script type="math/tex; mode=display">
+lr(s)=\frac{\lambda}{\sqrt{d_m}}\cdot min(\frac{1}{s^{0.5}},\frac{s}{s_{warmup}^{1.5}})
+</script></p>
+<h5 id="optuna--a-hyperparameter-optimization-framework"><a href="https://github.com/optuna/optuna" target="_blank">Optuna</a> : A hyperparameter optimization framework</h5>
+<ul>
+<li><p>&#x6982;&#x5FF5;</p>
+<ul>
+<li>Trial  &#x4E00;&#x6B21;&#x9488;&#x5BF9;&#x76EE;&#x6807;&#x51FD;&#x6570;&#x7684;&#x5C1D;&#x8BD5;</li>
+<li>Study &#x5305;&#x542B;&#x591A;&#x6B21;&#x5C1D;&#x8BD5;&#x7684;&#x4E00;&#x6B21;&#x4F1A;&#x8BDD; &#xFF0C;&#x6307;&#x5B9A;<code>study_name</code> &#x4F18;&#x5316;&#x65B9;&#x5411;<code>direction</code> ; &#x6307;&#x5B9A;sampler/pruner ; &#x8BBE;&#x7F6E;db&#x7EA7;&#x522B;&#x7684;storage&#x7528;&#x4E8E;&#x5E76;&#x884C;(&#x540C;&#x65F6;&#x542F;&#x52A8;&#x591A;&#x4E2A;&#x4EFB;&#x52A1;&#x5373;&#x53EF;)</li>
+<li>Parameter &#x9700;&#x8981;&#x4F18;&#x5316;&#x7684;&#x53C2;&#x6570;</li>
+</ul>
+</li>
+<li><p>&#x5E38;&#x7528;API</p>
+<ul>
+<li>&#x6267;&#x884C;study <code>study.optimize(objective, n_trials=100)</code></li>
+<li>&#x83B7;&#x5F97;study&#x540E;&#x7684;&#x6700;&#x4F18;parameter  <code>study.best_params</code></li>
+<li>&#x83B7;&#x5F97;study&#x540E;&#x7684;&#x6700;&#x5C0F;&#x76EE;&#x6807;&#x51FD;&#x6570;&#x503C;  <code>study.best_value</code></li>
+<li>&#x83B7;&#x5F97;study&#x540E;&#x7684;&#x6700;&#x4F73;trial&#x7684;&#x4FE1;&#x606F;  <code>study.best_trial</code></li>
+<li>&#x83B7;&#x5F97;study&#x540E;&#x7684;&#x6240;&#x6709;trials&#x4FE1;&#x606F;  <code>study.trials</code></li>
+</ul>
+</li>
+<li><p>&#x5B9A;&#x4E49;&#x53C2;&#x6570;&#x7A7A;&#x95F4;</p>
+<ul>
+<li>&#x5206;&#x652F; if / &#x5FAA;&#x73AF; for</li>
+<li>categorical / int / float</li>
+</ul>
+</li>
+</ul>
+<pre class="language-"><code class="lang-python">optimizer = trial.suggest_categorical(<span class="hljs-string">&quot;optimizer&quot;</span>, [<span class="hljs-string">&quot;MomentumSGD&quot;</span>, <span class="hljs-string">&quot;Adam&quot;</span>])
+num_channels = trial.suggest_int(<span class="hljs-string">&quot;num_channels&quot;</span>, <span class="hljs-number">32</span>, <span class="hljs-number">512</span>, log=<span class="hljs-keyword">True</span>)
+drop_path_rate = trial.suggest_float(<span class="hljs-string">&quot;drop_path_rate&quot;</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span>, step=<span class="hljs-number">0.1</span>)
+</code></pre>
+<ul>
+<li><p>&#x4F18;&#x5316;&#x7B97;&#x6CD5;</p>
+<ul>
+<li><p>sampling Algorithms (&#x7F29;&#x51CF;&#x53C2;&#x6570;&#x7A7A;&#x95F4;&#x89C4;&#x6A21;&#xFF09;</p>
+<ul>
+<li>Tree-structured Parzen Estimator algorithm <code>optuna.samplers.TPESampler</code> (&#x9ED8;&#x8BA4;)</li>
+<li>CMA-ES based algorithm <code>optuna.samplers.CmaEsSampler</code></li>
+<li>Grid Search <code>optuna.samplers.GridSampler</code></li>
+<li>Random Search  <code>optuna.samplers.RandomSampler</code></li>
+</ul>
+</li>
+<li><p>pruning Algorithms (&#x81EA;&#x52A8;&#x5316;&#x7684; early-stopping))</p>
+<ul>
+<li>Asynchronous Successive Halving algorithm <code>optuna.pruners.SuccessiveHalvingPruner</code></li>
+<li>Hyperband algorithm <code>optuna.pruners.HyperbandPruner</code></li>
+<li>Median pruning algorithm <code>optuna.pruners.MedianPruner</code> (&#x9ED8;&#x8BA4;)<ul>
+<li>Prune if the trial&#x2019;s best intermediate result is worse than median of intermediate results of previous trials at the same step.</li>
+</ul>
+</li>
+<li>Threshold pruning algorithm <code>optuna.pruners.ThresholdPruner</code><ul>
+<li>&#x6307;&#x5B9A;&#x56FA;&#x5B9A;&#x7684; max/min threashold &#x4F5C;&#x4E3A;&#x5224;&#x65AD;&#x6807;&#x51C6; </li>
+</ul>
+</li>
+<li>&#x5E94;&#x7528;&#x6307;&#x5B9A;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x88C1;&#x526A; Trial.report / Trial.should_prune</li>
+</ul>
+</li>
+<li><p>&#x642D;&#x914D;&#x5EFA;&#x8BAE;</p>
+<ul>
+<li>RandomSampler + MedianPruner / TPESampler + Hyperband ( for not deep-learning)</li>
+<li>&#x901A;&#x8FC7; callback &#x7684;&#x65B9;&#x5F0F;&#x4E0E;&#x5176;&#x4ED6;&#x6846;&#x67B6;&#x6574;&#x5408; <code>optuna.integration.*</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>sklearn + optuna + pruner</li>
+</ul>
+<pre class="language-"><code class="lang-python"><span class="hljs-keyword">import</span> optuna
+<span class="hljs-keyword">import</span> sklearn.datasets
+<span class="hljs-keyword">import</span> sklearn.linear_model
+<span class="hljs-keyword">import</span> sklearn.model_selection
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">objective</span><span class="hljs-params">(trial)</span>:</span>
+    iris = sklearn.datasets.load_iris()
+    classes = list(set(iris.target))
+    train_x, valid_x, train_y, valid_y = sklearn.model_selection.train_test_split(
+        iris.data, iris.target, test_size=<span class="hljs-number">0.25</span>, random_state=<span class="hljs-number">0</span>
+    )
+
+    alpha = trial.suggest_float(<span class="hljs-string">&quot;alpha&quot;</span>, <span class="hljs-number">1e-5</span>, <span class="hljs-number">1e-1</span>, log=<span class="hljs-keyword">True</span>)
+    clf = sklearn.linear_model.SGDClassifier(alpha=alpha)
+
+    <span class="hljs-keyword">for</span> step <span class="hljs-keyword">in</span> range(<span class="hljs-number">100</span>):
+        clf.partial_fit(train_x, train_y, classes=classes)
+
+        <span class="hljs-comment"># Report intermediate objective value.</span>
+        intermediate_value = <span class="hljs-number">1.0</span> - clf.score(valid_x, valid_y)
+        trial.report(intermediate_value, step) <span class="hljs-comment"># report &#x6C47;&#x62A5;&#x6BCF;&#x4E2A;step&#x7684;&#x9A8C;&#x8BC1;&#x96C6;&#x8BC4;&#x4EF7;</span>
+
+        <span class="hljs-comment"># Handle pruning based on the intermediate value.</span>
+        <span class="hljs-keyword">if</span> trial.should_prune():
+            <span class="hljs-keyword">raise</span> optuna.TrialPruned()
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">1.0</span> - clf.score(valid_x, valid_y) <span class="hljs-comment"># &#x8FD4;&#x56DE;&#x6700;&#x7EC8;&#x7684;&#x9A8C;&#x8BC1;&#x96C6;&#x8BC4;&#x4EF7;</span>
+
+study = optuna.create_study(pruner=optuna.pruners.MedianPruner())
+study.optimize(objective, n_trials=<span class="hljs-number">20</span>)
+</code></pre>
+<ul>
+<li>allennlp + optuna + pruner</li>
+</ul>
+<pre class="language-"><code class="lang-jsonnet">// alennlp  hparams.json
+[
+  {
+    &quot;type&quot;: &quot;int&quot;,
+    &quot;attributes&quot;: {
+      &quot;name&quot;: &quot;embedding_dim&quot;,
+      &quot;low&quot;: 64,
+      &quot;high&quot;: 128
+    }
+  },
+  {
+    &quot;type&quot;: &quot;float&quot;,
+    &quot;attributes&quot;: {
+      &quot;name&quot;: &quot;dropout&quot;,
+      &quot;low&quot;: 0.0,
+      &quot;high&quot;: 0.5
+    }
+  },
+  {
+  &quot;type&quot;: &quot;categorical&quot;,
+  &quot;attributes&quot;: {
+    &quot;name&quot;: &quot;kernel&quot;,
+    &quot;choices&quot;: [&quot;linear&quot;, &quot;poly&quot;, &quot;rbf&quot;]
+    }
+  }
+]
+
+
+// optuna.json
+{
+  &quot;pruner&quot;: {
+    &quot;type&quot;: &quot;HyperbandPruner&quot;,
+    &quot;attributes&quot;: {
+      &quot;min_resource&quot;: 1,
+      &quot;reduction_factor&quot;: 5
+    }
+  },
+  &quot;sampler&quot;: {
+    &quot;type&quot;: &quot;TPESampler&quot;,
+    &quot;attributes&quot;: {
+      &quot;n_startup_trials&quot;: 5
+    }
+  }
+}
+
+// *.jsonnet
+local embedding_dim = std.parseInt(std.extVar(&apos;embedding_dim&apos;));
+local dropout = std.parseJson(std.extVar(&apos;dropout&apos;));
+local kernel = std.parseJson(std.extVar(&apos;kernel&apos;));
+
+trainer: {
+  // NOTE add `optuna_pruner` here!
+  epoch_callbacks: [
+    {
+      type: &apos;optuna_pruner&apos;,
+    }
+  ],
+  num_epochs: num_epochs,
+  optimizer: {
+    lr: lr,
+    type: &apos;sgd&apos;,
+  },
+  validation_metric: &apos;+accuracy&apos;,
+}
+</code></pre>
+<pre class="language-"><code class="lang-shell"># &#x8BAD;&#x7EC3;
+allennlp tune \
+    imdb_optuna.jsonnet \
+    hparams.json \
+    --optuna-param-path optuna.json \
+    --serialization-dir result \
+    --study-name demo \
+    --direction maximize \
+    --storage mysql://&lt;user_name&gt;:&lt;passwd&gt;@&lt;db_host&gt;/&lt;db_name&gt; \
+    --skip-if-exists
+
+# &#x83B7;&#x5F97;&#x53C2;&#x6570;&#x7ED3;&#x679C;
+allennlp best-params \
+    --study-name demo \
+    --storage mysql://&lt;user_name&gt;:&lt;passwd&gt;@&lt;db_host&gt;/&lt;db_name&gt;
+
+# &#x4F7F;&#x7528;&#x6700;&#x4F73;&#x53C2;&#x6570; Retrain 
+allennlp retrain \
+    imdb_optuna.jsonnet \
+    --serialization-dir retrain_result \
+    --study-name demo \
+    --storage mysql://&lt;user_name&gt;:&lt;passwd&gt;@&lt;db_host&gt;/&lt;db_name&gt;
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="metric.html" class="navigation navigation-prev " aria-label="Previous page: Metric">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="loss.html" class="navigation navigation-next " aria-label="Next page: Loss">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Optimizer","level":"1.3.8","depth":2,"next":{"title":"Loss","level":"1.3.9","depth":2,"path":"book/tutorial/ml/loss.md","ref":"book/tutorial/ml/loss.md","articles":[]},"previous":{"title":"Metric","level":"1.3.7","depth":2,"path":"book/tutorial/ml/metric.md","ref":"book/tutorial/ml/metric.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","-lunr","-sharing","search-pro","advanced-emoji","mermaid-gb3","chapter-fold","expandable-chapters","highlight","emphasize","prism","mathjax","livereload"],"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"emphasize":{},"livereload":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"book/tutorial/ml/optimizer.md","mtime":"2021-09-12T13:38:12.396Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-22T08:02:58.261Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

@@ -1,0 +1,811 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>RoPE · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="多标签CE.html" />
+    
+    
+    <link rel="prev" href="GlobalPointer.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introducation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../tutorial/markdown.html">
+            
+                <a href="../tutorial/markdown.html">
+            
+                    
+                    MarkDown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    机器学习基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../tutorial/ml/basic.html">
+            
+                <a href="../tutorial/ml/basic.html">
+            
+                    
+                    什么是机器学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../tutorial/ml/rnn.html">
+            
+                <a href="../tutorial/ml/rnn.html">
+            
+                    
+                    循环神经网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../tutorial/ml/transformer.html">
+            
+                <a href="../tutorial/ml/transformer.html">
+            
+                    
+                    Transformer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../tutorial/ml/pytorch.html">
+            
+                <a href="../tutorial/ml/pytorch.html">
+            
+                    
+                    PyTorch Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../tutorial/ml/allennlp.html">
+            
+                <a href="../tutorial/ml/allennlp.html">
+            
+                    
+                    AllenNLP Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../tutorial/ml/snorkel.html">
+            
+                <a href="../tutorial/ml/snorkel.html">
+            
+                    
+                    Snorkel Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../tutorial/ml/metric.html">
+            
+                <a href="../tutorial/ml/metric.html">
+            
+                    
+                    Metric
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../tutorial/ml/optimizer.html">
+            
+                <a href="../tutorial/ml/optimizer.html">
+            
+                    
+                    Optimizer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../tutorial/ml/loss.html">
+            
+                <a href="../tutorial/ml/loss.html">
+            
+                    
+                    Loss
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Paper阅读
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="GlobalPointer.html">
+            
+                <a href="GlobalPointer.html">
+            
+                    
+                    GlobalPointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="RoPE.html">
+            
+                <a href="RoPE.html">
+            
+                    
+                    RoPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="多标签CE.html">
+            
+                <a href="多标签CE.html">
+            
+                    
+                    多标签CE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >RoPE</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <center><h1 id="rope">RoPE</h1></center>
+
+<blockquote>
+<ol>
+<li>&#x7EDD;&#x5BF9;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x4F18;&#x70B9;&#xFF1A;&#x5B9E;&#x73B0;&#x7B80;&#x5355;&#xFF0C;&#x8BA1;&#x7B97;&#x901F;&#x5EA6;&#x5FEB;&#x3002;</li>
+<li>&#x76F8;&#x5BF9;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x4F18;&#x70B9;&#xFF1A;&#x76F4;&#x63A5;&#x4F53;&#x73B0;&#x4E86;&#x76F8;&#x5BF9;&#x4F4D;&#x7F6E;&#x4FE1;&#x53F7;&#xFF0C;&#x5B9E;&#x9645;&#x6027;&#x80FD;&#x66F4;&#x597D;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x80FD;&#x591F;&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x7684;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#x76F8;&#x5BF9;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4FBF;&#x201C;&#x9C7C;&#x548C;&#x718A;&#x638C;&#x517C;&#x5F97;&#x201D;&#x3002;</li>
+<li>RoPE <script type="math/tex; ">\Rightarrow</script> Rotrary Position Embedding</li>
+</ol>
+</blockquote>
+<h2 id="&#x4E00;&#x3001;&#x95EE;&#x9898;&#x62BD;&#x8C61;">&#x4E00;&#x3001;&#x95EE;&#x9898;&#x62BD;&#x8C61;</h2>
+<p>&#x5982;&#x679C;&#x60F3;&#x8981;&#x7528;&#x7EDD;&#x5BF9;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x7684;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#x76F8;&#x5BF9;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x3002;</p>
+<p>&#xFF08;1&#xFF09;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5148;&#x8981;&#x8003;&#x8651;&#xFF0C;&#x5047;&#x8BBE;&#x80FD;&#x591F;&#x8BBE;&#x8BA1;&#x51FA;&#x64CD;&#x4F5C;<script type="math/tex; ">\pmb{f}(\cdot, m)</script>&#xFF0C;<script type="math/tex; ">\pmb{f}(\cdot, n)</script>&#xFF0C;&#x4F7F;&#x5F97;&#x7ECF;&#x8FC7;&#x8BE5;&#x64CD;&#x4F5C;&#x540E;&#xFF0C;<script type="math/tex; ">\widetilde{\pmb{q}}_m</script>&#xFF0C;<script type="math/tex; ">\widetilde{\pmb{k}}_n</script>&#x5C31;&#x5E26;&#x6709;&#x4E86;<script type="math/tex; ">m</script>&#xFF0C;<script type="math/tex; ">n</script>&#x7684;&#x7EDD;&#x5BF9;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#xFF0C;&#x5373;&#xFF1A;
+<script type="math/tex; mode=display">
+\begin{aligned}
+\widetilde{\pmb{q}}_m &= \pmb{f}(\pmb{q}, m) \\
+\widetilde{\pmb{k}}_n &= \pmb{f}(\pmb{k}, n)
+\end{aligned}
+</script></p>
+<p>&#xFF08;2&#xFF09;&#x4E0B;&#x4E00;&#x6B65;&#x9700;&#x8981;&#x8003;&#x8651;&#xFF0C;Attention&#x7684;&#x6838;&#x5FC3;&#x8FD0;&#x7B97;&#x662F;&#x5185;&#x79EF;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5185;&#x79EF;&#x8FD0;&#x7B97;&#x7ED3;&#x679C;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x5E26;&#x6709;&#x76F8;&#x5BF9;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#xFF0C;&#x56E0;&#x6B64;&#x5047;&#x8BBE;&#x5B58;&#x5728;&#x6052;&#x7B49;&#x5173;&#x7CFB;&#xFF1A;
+<script type="math/tex; mode=display">
+<\pmb{f}(\pmb{q}, m), \pmb{f}(\pmb{k}, n)> = g(\pmb{q}, \pmb{k}, m-n)
+</script></p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x6839;&#x636E;&#x6052;&#x7B49;&#x5F0F;&#xFF0C;&#x6C42;&#x51FA;<script type="math/tex; ">\pmb{f}(\cdot, m)</script>&#x4E00;&#x4E2A;&#x5C3D;&#x53EF;&#x80FD;&#x7B80;&#x5355;&#x7684;&#x89E3;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5C31;&#x80FD;&#x591F;&#x5F97;&#x5230;&#x6EE1;&#x8DB3;&#x4EE5;&#x4E0A;&#x4E24;&#x4E2A;&#x6761;&#x4EF6;&#x7684;&#x53D8;&#x6362;&#x64CD;&#x4F5C;&#xFF0C;&#x5373;&#x7528;&#x7EDD;&#x5BF9;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x7684;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#x4E86;&#x76F8;&#x5BF9;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x3002;</p>
+<p>&#x8BBE;&#x521D;&#x59CB;&#x6761;&#x4EF6;&#xFF1A;<script type="math/tex; ">\pmb{f}(\pmb{q},0) = \pmb{q}</script>&#xFF0C;<script type="math/tex; ">\pmb{f}(\pmb{k},0) = \pmb{k}</script></p>
+<h2 id="&#x4E8C;&#x3001;&#x6C42;&#x89E3;">&#x4E8C;&#x3001;&#x6C42;&#x89E3;</h2>
+<p>&#x501F;&#x52A9;&#x590D;&#x6570;&#x6765;&#x6C42;&#x89E3;&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x5728;&#x590D;&#x6570;&#x4E2D;&#x6709;<script type="math/tex; "><\pmb{q}, \pmb{k}> = Re[\pmb{q}\pmb{k}^*]</script>&#xFF0C;&#x518D;&#x6839;&#x636E;&#x6052;&#x7B49;&#x5F0F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F97;&#x5230;:
+<script type="math/tex; ">Re[\pmb{f}(\pmb{q}, m)\pmb{f}^*(\pmb{k}, n)] = g(\pmb{q},\pmb{k},m-n) \tag{1.1}</script></p>
+<p>&#x82E5;&#x60F3;&#x8BA9;(1)&#x5F0F;&#x6210;&#x7ACB;&#x7684;&#x8BDD;&#xFF0C;&#x6211;&#x4EEC;&#x5047;&#x8BBE;&#x5B58;&#x5728;&#x590D;&#x6570;<script type="math/tex; ">\pmb{g}(\pmb{q}, \pmb{k}, m-n)</script>&#xFF0C;&#x4F7F;&#x5F97;
+<script type="math/tex; ">\pmb{f}(\pmb{q}, m)\pmb{f}^*(\pmb{k}, n)=\pmb{g}(\pmb{q}, \pmb{k}, m-n) \tag{1.2}</script></p>
+<p>&#x4F7F;&#x7528;&#x590D;&#x6570;&#x7684;&#x6307;&#x6570;&#x5F62;&#x5F0F;&#xFF1A;
+<script type="math/tex; mode=display">
+\begin{aligned}
+\pmb{f}(\pmb{q}, m) &= R_{\pmb{f}}(\pmb{q},m)e^{i\theta_{\pmb{f}}(\pmb{q},m)} \\
+\pmb{f}(\pmb{k}, n) &= R_{\pmb{f}}(\pmb{k},n)e^{i\theta_{\pmb{f}}(\pmb{k},n)} \\
+\pmb{g}(\pmb{q}, \pmb{k}, m-n) &= R_{\pmb{g}}(\pmb{q},\pmb{k},m-n)e^{i\theta_{\pmb{g}}(\pmb{q},\pmb{k},m-n)} 
+\end{aligned} \tag{2}
+</script></p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x6C42;&#x51FA;(2)&#x5F0F;&#x4E2D;&#x7684;<script type="math/tex; ">R</script>&#x548C;<script type="math/tex; ">\theta</script>&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x53D8;&#x6362;f&#x3002;</p>
+<p>&#x5C06;(2)&#x5F0F;&#x4EE3;&#x5165;(1.2)&#x5F0F;&#x5F97;&#xFF1A;
+<script type="math/tex; mode=display">
+\begin{aligned}
+R_{\pmb{f}}(\pmb{q},m)\cdot R_{\pmb{f}}(\pmb{k},n) &= R_{\pmb{g}}(\pmb{q},\pmb{k},m-n) \\
+\theta_{\pmb{f}}(\pmb{q},m)-\theta_{\pmb{f}}(\pmb{k},n) &= \theta_{\pmb{g}}(\pmb{q},\pmb{k},m-n) 
+\end{aligned} \tag{3}
+</script> </p>
+<p>&#x5BF9;(3)&#x5F0F;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x7B49;&#x5F0F;&#x4EE3;&#x5165;<script type="math/tex; ">m=n=0</script>:
+<script type="math/tex; mode=display">
+\begin{aligned}
+R_{\pmb{f}(\pmb{q},m)}\cdot R_{\pmb{f}(\pmb{k},m)} &= R_{\pmb{g}(\pmb{q},\pmb{k},0)} \\
+&= R_{\pmb{f}(\pmb{q},0)}\cdot R_{\pmb{f}(\pmb{k},0)} \\
+& = ||\pmb{q}||\cdot||\pmb{k}|| 
+\end{aligned} \tag{4}
+</script></p>
+<p><script type="math/tex; mode=display">
+\Rightarrow
+\begin{aligned}
+R_{\pmb{f}}(\pmb{q},m) &= ||\pmb{q}|| \\
+R_{\pmb{f}}(\pmb{k},m) &= ||\pmb{k}|| 
+\end{aligned} \tag{7}
+</script>
+&#x5373;&#x4E0D;&#x4F9D;&#x8D56;&#x4E8E;m&#x3002;</p>
+<p>&#x5BF9;(3)&#x5F0F;&#x4E2D;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x7B49;&#x5F0F;&#x4EE3;&#x5165;<script type="math/tex; ">m=n=0</script>:
+<script type="math/tex; mode=display">
+\begin{aligned}
+\theta_{\pmb{f}}(\pmb{q},m)-\theta_{\pmb{f}}(\pmb{k},m) &= \theta_{\pmb{g}}(\pmb{q},\pmb{k},0) \\
+&= \theta_{\pmb{f}}(\pmb{q},0)-\theta_{\pmb{f}}(\pmb{k},0) \\
+&= \theta(\pmb{q})-\theta(\pmb{k})
+\end{aligned} \tag{5}
+</script></p>
+<p><script type="math/tex; mode=display">
+\Rightarrow
+\theta_{\pmb{f}}(\pmb{q},m)-\theta(\pmb{q})=\theta_{\pmb{f}}(\pmb{k},m)-\theta(\pmb{k})
+</script></p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x51FA;<script type="math/tex; ">\theta_{\pmb{f}}(\pmb{q},m)-\theta(\pmb{q})</script>&#x53EA;&#x4E0E;<script type="math/tex; ">m</script>&#x76F8;&#x5173;&#xFF0C;&#x8BB0;&#x4E3A;<script type="math/tex; ">\psi(m)</script>&#xFF0C;&#x5219;&#x6709;:
+<script type="math/tex; ">\theta_{\pmb{f}}(\pmb{q},m)=\theta(\pmb{q})+\psi(m) \tag{6}</script></p>
+<p>&#x4EE4;<script type="math/tex; ">n=m-1</script>:
+<script type="math/tex; mode=display">
+\begin{aligned}
+\psi(m) &= \theta_{\pmb{f}}(\pmb{q},m) - \theta(\pmb{q}) \\
+\psi(m-1) &= \theta_{\pmb{f}}(\pmb{q},m-1) - \theta(\pmb{q})
+\end{aligned}
+</script>
+<script type="math/tex; mode=display">
+\Rightarrow
+\begin{aligned}
+\psi(m) - \psi(n) &= \psi(m) - \psi(m-1) \\
+&= \theta_{\pmb{f}}(\pmb{q},m) - \theta_{\pmb{f}}(\pmb{q},m-1)
+\end{aligned}
+</script>
+&#x5C06;(3)&#x5F0F;&#x4E2D;&#x7684;&#x7B2C;&#x4E8C;&#x884C;&#x4EE3;&#x5165;&#xFF1A;
+<script type="math/tex; mode=display">
+\begin{aligned}
+\psi(m) - \psi(m-1) &= \theta_{\pmb{g}}(\pmb{q},\pmb{k},m-n)+\theta_{\pmb{f}}(\pmb{k},n)-\theta_{\pmb{f}}(\pmb{q},m-1) \\
+&= \theta_{\pmb{g}}(\pmb{q},\pmb{k},1) + \theta_{\pmb{f}}(\pmb{k},m-1) - \theta_{\pmb{f}}(\pmb{q},m-1)
+\end{aligned}
+</script>
+&#x5C06;(5)&#x5F0F;&#x4EE3;&#x5165;&#xFF1A;
+<script type="math/tex; mode=display">
+\begin{aligned}
+\psi(m) - \psi(m-1) &= \theta_{\pmb{g}}(\pmb{q},\pmb{k},1) + \theta(\pmb{k}) - \theta(\pmb{q})
+\end{aligned}
+</script>
+&#x53EF;&#x4EE5;&#x770B;&#x51FA;<script type="math/tex; ">\psi(m) - \psi(m-1)</script>&#x4E0E;<script type="math/tex; ">m</script>&#x65E0;&#x5173;&#xFF0C;&#x56E0;&#x6B64;<script type="math/tex; ">\psi(m)</script>&#x662F;&#x7B49;&#x5DEE;&#x6570;&#x5217;&#x3002;&#x8BBE;<script type="math/tex; ">\psi(m) - \psi(m-1) = \theta</script>&#xFF0C;<script type="math/tex; ">\theta</script>&#x4E3A;&#x5E38;&#x6570;&#x3002;&#x6839;&#x636E;&#x7B49;&#x5DEE;&#x6570;&#x5217;&#x901A;&#x9879;&#x516C;&#x5F0F;&#xFF0C;&#x6709;&#xFF1A;
+<script type="math/tex; mode=display">
+\begin{aligned}
+\psi(m) &= \psi(m = 0) + m\theta \\
+&= 0 + m\theta \\
+\Rightarrow \psi(m) &= m\theta
+\end{aligned} \tag{8}
+</script></p>
+<p>&#x7531;&#x6B64;&#x6211;&#x4EEC;&#x63A8;&#x5F97;&#x4E86;&#x53D8;&#x6362;<script type="math/tex; ">\pmb{f}(\pmb{q}, m)</script>:
+<script type="math/tex; mode=display">
+\begin{aligned}
+\pmb{f}(\pmb{q}, m) &= R_{\pmb{f}}(\pmb{q},m)e^{i\theta_{\pmb{f}}(\pmb{q},m)} \\
+根据(6),(7),(8)\Rightarrow &= ||\pmb{q}||e^{i(\theta(\pmb{q})+m\theta)} \\
+&= ||q||e^{i\theta(\pmb{q})}\cdot e^{im\theta} \\
+&= \pmb{q}\cdot e^{im\theta}
+\end{aligned} \tag{9}
+</script>
+&#x5F97;&#x5230;&#x53D8;&#x6362;&#x7684;&#x7ED3;&#x679C;&#x540E;&#xFF0C;&#x662F;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x5199;&#x6210;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x4F46;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x8BE5;&#x53D8;&#x6362;&#x662F;&#x4E24;&#x4E2A;&#x590D;&#x6570;&#x76F8;&#x4E58;&#xFF0C;&#x4E24;&#x4E2A;&#x590D;&#x6570;&#x76F8;&#x4E58;&#x7684;&#x51E0;&#x4F55;&#x610F;&#x4E49;&#x4E3A;&#x65CB;&#x8F6C;&#x3002;</p>
+<h2 id="&#x4E09;&#x3001;&#x8F6C;&#x6362;&#x6210;&#x4EE3;&#x7801;&#x5F62;&#x5F0F;">&#x4E09;&#x3001;&#x8F6C;&#x6362;&#x6210;&#x4EE3;&#x7801;&#x5F62;&#x5F0F;</h2>
+<p>&#x6839;&#x636E;(9)&#x5F0F;&#x4EE5;&#x53CA;&#x590D;&#x6570;&#x76F8;&#x4E58;&#x7684;&#x51E0;&#x4F55;&#x610F;&#x4E49;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x6210;(9)&#x5F0F;&#x5C31;&#x662F;&#x5BF9;&#x590D;&#x6570;<script type="math/tex; ">\pmb{q}</script>&#x5BF9;&#x5E94;&#x7684;&#x5411;&#x91CF;&#x65CB;&#x8F6C;<script type="math/tex; ">m\theta</script>&#x89D2;&#x5EA6;&#xFF1A;
+<script type="math/tex; mode=display">
+\begin{aligned}
+\pmb{f}(\pmb{q}, m) &= \pmb{q}\cdot e^{im\theta} \\
+&= \left[
+  \begin{matrix}
+   cosm\theta & -sinm\theta \\
+   sinm\theta & cosm\theta
+  \end{matrix}
+  \right] 
+  \left[
+  \begin{matrix}
+   q_0 \\
+   q_1
+  \end{matrix}
+  \right] 
+\end{aligned} \tag{10}
+</script>
+&#x7531;&#x4E8E;&#x5185;&#x79EF;&#x6EE1;&#x8DB3;&#x7EBF;&#x6027;&#x53E0;&#x52A0;&#x6027;&#xFF0C;&#x56E0;&#x6B64;&#x4EFB;&#x610F;&#x5076;&#x6570;&#x7EF4;&#x7684;RoPE&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x4E3A;&#x4E8C;&#x7EF4;&#x60C5;&#x5F62;&#x7684;&#x62FC;&#x63A5;&#xFF1A;
+<script type="math/tex; mode=display">
+\left[
+  \begin{matrix}
+   cosm\theta_0 & -sinm\theta_0 & 0 & 0 & ... & 0 & 0\\
+   sinm\theta_0 & cosm\theta_0 & 0 & 0 & ... & 0 & 0\\
+   0 & 0 & cosm\theta_1 & -sinm\theta_1 &  ... & 0 & 0\\
+   0 & 0 & sinm\theta_1 & cosm\theta_1 &  ... & 0 & 0\\
+   ... & ... & ... & ... &  ... & ... & ...\\
+   0 & 0  &  ... & 0 & 0 & cosm\theta_{d/2-1} & -sinm\theta_{d/2-1}\\
+   0 & 0  &  ... & 0 & 0 & sinm\theta_{d/2-1} & cosm\theta_{d/2-1}\\
+  \end{matrix}
+  \right] 
+  \left[
+  \begin{matrix}
+   q_0 \\
+   q_1 \\
+   q_2 \\
+   q_3 \\
+   ... \\
+   q_{d-2} \\
+   q_{d-1}
+  \end{matrix}
+  \right] 
+\tag{11}
+</script>
+(11)&#x5F0F;&#x7684;&#x5DE6;&#x8FB9;&#x5C31;&#x662F;<script type="math/tex; ">R_m</script>&#x3002;</p>
+<p>&#x7ED9;&#x4F4D;&#x7F6E;&#x4E3A;<script type="math/tex; ">m</script>&#x7684;&#x5411;&#x91CF;<script type="math/tex; ">\pmb{q}</script>&#x4E58;&#x4E0A;&#x77E9;&#x9635;<script type="math/tex; ">R_m</script>&#xFF0C;&#x4F4D;&#x7F6E;&#x4E3A;<script type="math/tex; ">n</script>&#x7684;&#x5411;&#x91CF;<script type="math/tex; ">\pmb{k}</script>&#x4E58;&#x4E0A;&#x77E9;&#x9635;<script type="math/tex; ">R_n</script>&#xFF0C;&#x7528;&#x53D8;&#x6362;&#x540E;&#x7684;<script type="math/tex; ">\pmb{Q}</script>&#xFF0C;<script type="math/tex; ">\pmb{K}</script>&#x5E8F;&#x5217;&#x4F5C;Attention&#xFF0C;&#x90A3;&#x4E48;Attention&#x81EA;&#x52A8;&#x5305;&#x542B;&#x76F8;&#x5BF9;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#xFF0C;&#x56E0;&#x4E3A;&#x6210;&#x7ACB;&#x6052;&#x7B49;&#x5F0F;&#xFF1A;
+<script type="math/tex; ">\begin{aligned}
+(R_m\pmb{q})^T(R_n\pmb{k}) &= \pmb{q}^TR_m^TR_n\pmb{k} \\
+&= \pmb{q}^TR_{n-m}\pmb{k}
+\end{aligned} \tag{12}</script>
+&#x5176;&#x4E2D;(12)&#x5F0F;&#x4ECE;&#x7B2C;&#x4E00;&#x884C;&#x5230;&#x7B2C;&#x4E8C;&#x884C;&#xFF0C;&#x5229;&#x7528;&#x4E09;&#x89D2;&#x6052;&#x7B49;&#x5F0F;&#x5373;&#x53EF;&#x63A8;&#x5BFC;&#x51FA;&#x6765;&#xFF0C;&#x5F88;&#x7B80;&#x5355;&#x3002;</p>
+<p>&#x5176;&#x5B9E;&#xFF0C;(11)&#x5F0F;&#x7684;&#x77E9;&#x9635;&#x76F8;&#x4E58;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x7528;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x4E86;&#xFF0C;&#x4F46;&#x662F;<script type="math/tex; ">R_m</script>&#x662F;&#x4E2A;&#x7A00;&#x758F;&#x77E9;&#x9635;&#xFF0C;&#x6240;&#x4EE5;&#x76F4;&#x63A5;&#x7528;&#x77E9;&#x9635;&#x4E58;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x4F1A;&#x5F88;&#x6D6A;&#x8D39;&#x7B97;&#x529B;&#xFF0C;&#x56E0;&#x6B64;&#x5C06;&#x5176;&#x6539;&#x4E3A;&#x5982;&#x4E0B;&#x5F62;&#x5F0F;&#xFF1A;
+<script type="math/tex; mode=display">
+\begin{aligned}
+ \left[
+  \begin{matrix}
+   q_0 \\
+   q_1 \\
+   q_2 \\
+   q_3 \\
+   ... \\
+   q_{d-2} \\
+   q_{d-1}
+  \end{matrix}
+  \right] \bigotimes
+  \left[
+  \begin{matrix}
+   cosm\theta_{0} \\
+   cosm\theta_{0} \\
+   cosm\theta_{1} \\
+   cosm\theta_{1} \\
+   ... \\
+   cosm\theta_{d/2-1} \\
+   cosm\theta_{d/2-1}
+  \end{matrix}
+  \right] + 
+  \left[
+  \begin{matrix}
+   -q_1 \\
+   q_0 \\
+   -q_3 \\
+   q_2 \\
+   ... \\
+   -q_{d-1} \\
+   q_{d-2}
+  \end{matrix}
+  \right] \bigotimes
+  \left[
+  \begin{matrix}
+   sinm\theta_{0} \\
+   sinm\theta_{0} \\
+   sinm\theta_{1} \\
+   sinm\theta_{1} \\
+   ... \\
+   sinm\theta_{d/2-1} \\
+   sinm\theta_{d/2-1}
+  \end{matrix}
+  \right]
+\end{aligned} \tag{13}
+</script></p>
+<p>&#x56E0;&#x6B64;RoPE&#x7684;&#x6838;&#x5FC3;&#x4EE3;&#x7801;&#x5C31;&#x662F;(13)&#x5F0F;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GlobalPointer</span><span class="hljs-params">(layer)</span>:</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">call</span><span class="hljs-params">(self, inputs, mask=None)</span>:</span>
+        <span class="hljs-comment"># &#x8F93;&#x5165;&#x53D8;&#x6362;</span>
+        inputs = self.dense(inputs) <span class="hljs-comment"># &#x5168;&#x94FE;&#x63A5;&#xFF1A;q = Wh + b</span>
+        <span class="hljs-comment"># &#x9488;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;&#x5B9E;&#x4F53;&#x7C7B;&#x522B;&#x8FDB;&#x884C;&#x62C6;&#x5206;&#xFF0C;&#x62C6;&#x5206;&#x5B8C;&#x7684;&#x7ED3;&#x679C;&#x662F;q_alpha, k_alpha&#x5E8F;&#x5217;</span>
+        inputs = tf.split(inputs, self.heads, axis=<span class="hljs-number">-1</span>)
+        inputs = K.stack(inputs, axis=<span class="hljs-number">-2</span>)
+        qw, kw = inputs[..., :self.head_size], inputs[..., self.head_size:]
+        <span class="hljs-keyword">if</span> self.RoPE:
+            pos = SinusoidalPositionEmbedding(self.head_size, <span class="hljs-string">&apos;zero&apos;</span>)(inputs)
+            <span class="hljs-comment"># &#x5BF9;&#x5E94;&#x516C;&#x5F0F;(13)&#x4E2D;&#x7684;cos&#x90E8;&#x5206;</span>
+            cos_pos = K.repeat_elements(pos[..., <span class="hljs-keyword">None</span>, <span class="hljs-number">1</span>::<span class="hljs-number">2</span>], <span class="hljs-number">2</span>, <span class="hljs-number">-1</span>)
+            <span class="hljs-comment"># &#x5BF9;&#x5E94;&#x516C;&#x5F0F;(13)&#x4E2D;&#x7684;sin&#x90E8;&#x5206;</span>
+            sin_pos = K.repeat_elements(pos[..., <span class="hljs-keyword">None</span>, ::<span class="hljs-number">2</span>], <span class="hljs-number">2</span>, <span class="hljs-number">-1</span>)
+            <span class="hljs-comment"># qw2&#x5BF9;&#x5E94;&#x516C;&#x5F0F;(13)&#x4E2D;&#x7684;(-q1, q0, -q3, q2, ...)</span>
+            qw2 = K.stack([-qw[..., <span class="hljs-number">1</span>::<span class="hljs-number">2</span>], qw[..., ::<span class="hljs-number">2</span>]], <span class="hljs-number">4</span>) 
+            qw2 = K.reshape(qw2, K.shape(qw))
+            qw = qw * cos_pos + qw2 * sin_pos
+            kw2 = K.stack([-kw[..., <span class="hljs-number">1</span>::<span class="hljs-number">2</span>], kw[..., ::<span class="hljs-number">2</span>]], <span class="hljs-number">4</span>)
+            kw2 = K.reshape(kw2, K.shape(kw))
+            kw = kw * cos_pos + kw2 * sin_pos
+        <span class="hljs-comment"># &#x8BA1;&#x7B97;&#x5185;&#x79EF;</span>
+        <span class="hljs-comment"># qw&#x548C;kw&#x662F;&#x5305;&#x542B;&#x4E86;&#x7EDD;&#x5BF9;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#x7684;&#x5F20;&#x91CF;&#xFF0C;&#x70B9;&#x79EF;&#x8FD0;&#x7B97;&#x4F7F;&#x5176;&#x83B7;&#x5F97;&#x76F8;&#x5BF9;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;</span>
+        logits = tf.einsum(<span class="hljs-string">&apos;bmhd,bnhd-&gt;bhmn&apos;</span>, qw, kw)
+        <span class="hljs-comment"># &#x6392;&#x9664;padding</span>
+        logits = sequence_masking(logits, mask, <span class="hljs-string">&apos;-inf&apos;</span>, <span class="hljs-number">2</span>)
+        logits = sequence_masking(logits, mask, <span class="hljs-string">&apos;-inf&apos;</span>, <span class="hljs-number">3</span>)
+        <span class="hljs-comment"># &#x6392;&#x9664;&#x4E0B;&#x4E09;&#x89D2;</span>
+        <span class="hljs-keyword">if</span> self.tril_mask:
+            mask = tf.linalg.band_part(K.ones_like(logits), <span class="hljs-number">0</span>, <span class="hljs-number">-1</span>)
+            logits = logits - (<span class="hljs-number">1</span> - mask) * K.infinity()
+        <span class="hljs-comment"># scale&#x8FD4;&#x56DE;</span>
+        <span class="hljs-comment"># &#x6CE8;&#x610F;&#x535A;&#x5BA2;&#x4E2D;&#x5199;globalpointer&#x539F;&#x7406;&#x7684;&#x65F6;&#x5019;&#x5E76;&#x6CA1;&#x6709;scale&#x64CD;&#x4F5C;&#xFF0C;&#x5B9E;&#x73B0;&#x65F6;&#x662F;&#x6709;&#x7684;</span>
+        <span class="hljs-keyword">return</span> logits / self.head_size**<span class="hljs-number">0.5</span>
+</code></pre>
+<h2 id="&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x590D;&#x4E60;">&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x590D;&#x4E60;</h2>
+<h4 id="1-&#x590D;&#x6570;&#x7684;&#x5404;&#x79CD;&#x5F62;&#x5F0F;">1. &#x590D;&#x6570;&#x7684;&#x5404;&#x79CD;&#x5F62;&#x5F0F;</h4>
+<p>&#x590D;&#x5E73;&#x9762;</p>
+<p><img src="img/&#x590D;&#x5E73;&#x9762;.png" alt=""></p>
+<p>&#x590D;&#x5E73;&#x9762;&#x4E2D;&#x7684;&#x70B9;<script type="math/tex; ">(a, b)</script>&#x5BF9;&#x5E94;&#x590D;&#x6570;<script type="math/tex; ">a+bi</script>&#xFF0C;&#x5176;&#x5171;&#x8F6D;&#x4E3A;<script type="math/tex; ">a-bi</script></p>
+<p>&#x4E09;&#x89D2;&#x5F62;&#x5F0F;&#xFF1A;
+<script type="math/tex; mode=display">
+\begin{aligned}
+a &= rcos\theta \\
+b &= rsin\theta \\
+a + bi &= rcos\theta + risin\theta \\
+&= r(cos\theta + isin\theta)
+\end{aligned}
+</script></p>
+<p>&#x6307;&#x6570;&#x5F62;&#x5F0F;&#xFF08;&#x4F7F;&#x7528;&#x4E09;&#x89D2;&#x5F62;&#x5F0F;&#x7684;&#x4E58;&#x6CD5;&#x8FDB;&#x884C;&#x63A8;&#x5BFC;&#xFF09;&#xFF1A;<script type="math/tex; ">a+bi=re^{i\theta}</script> &#x5176;&#x5171;&#x8F6D;&#x4E3A;<script type="math/tex; ">re^{-i\theta}</script></p>
+<h4 id="2-&#x590D;&#x6570;&#x76F8;&#x4E58;&#x7684;&#x51E0;&#x4F55;&#x610F;&#x4E49;">2. &#x590D;&#x6570;&#x76F8;&#x4E58;&#x7684;&#x51E0;&#x4F55;&#x610F;&#x4E49;</h4>
+<p>&#x4EE5;&#x4E0B;&#x8BC1;&#x660E;&#x590D;&#x6570;&#x76F8;&#x4E58;&#x7684;&#x51E0;&#x4F55;&#x610F;&#x4E49;&#x4E3A;&#x65CB;&#x8F6C;&#x3002;
+&#x6211;&#x4EEC;&#x5DF2;&#x77E5;&#x590D;&#x6570;&#x7684;&#x4E09;&#x89D2;&#x5F62;&#x5F0F;&#xFF0C;&#x5047;&#x8BBE;&#x6709;&#x590D;&#x6570;<script type="math/tex; ">z_1</script>&#x548C;<script type="math/tex; ">z_2</script>&#xFF0C;&#x5B83;&#x4EEC;&#x7684;&#x4E09;&#x89D2;&#x5F62;&#x5F0F;&#x4E3A;&#xFF1A;
+<script type="math/tex; mode=display">
+\begin{aligned}
+z_1 &= r_1(cos\theta_1 + isin\theta_1) \\
+z_2 &= r_2(cos\theta_2 + isin\theta_2) \\
+对应复平面\Rightarrow \pmb{OZ}_1 &= (r_1cos\theta_1, r_1sin\theta_1) \\
+\pmb{OZ}_2&= (r_2cos\theta_2, r_2sin\theta_2)
+\end{aligned}
+</script>
+&#x4ECE;&#x4E24;&#x8FB9;&#x5411;&#x4E2D;&#x95F4;&#x8BC1;&#xFF0C;</p>
+<p>&#x5DE6;&#x8FB9;&#xFF1A;
+<script type="math/tex; mode=display">
+\begin{aligned}
+z_1z_2 &= r_1r_2(cos\theta_1 + isin\theta_1)(cos\theta_2 + isin\theta_2) \\
+&= r_1r_2(cos\theta_1cos\theta_2+icos\theta_1sin\theta_2+isin\theta_1cos\theta_2-sin\theta_1sin\theta_2) \\
+&= r_1r_2[cos(\theta_1+\theta_2)+isin(\theta_1+\theta_2)]
+\end{aligned}
+</script></p>
+<p>&#x53F3;&#x8FB9;&#xFF1A;
+<script type="math/tex; mode=display">
+\begin{aligned}
+\pmb{OZ}_1 &= (r_1cos\theta_1, r_1sin\theta_1)
+\end{aligned}</script>
+&#x5BF9;<script type="math/tex; ">\pmb{OZ}_1</script>&#x65CB;&#x8F6C;<script type="math/tex; ">\theta_2</script>&#x5E76;&#x7F29;&#x653E;<script type="math/tex; ">r_2</script>&#xFF1A;
+<script type="math/tex; ">\begin{aligned}
+ r_2\cdot \left[
+ \begin{matrix}
+   cos\theta_2 & -sin\theta_2 \\
+   sin\theta_2 & cos\theta_2
+  \end{matrix}
+  \right]
+  \left[
+  \begin{matrix}
+   r_1cos\theta_1 \\
+   r_1sin\theta_1
+  \end{matrix}
+  \right] 
+&= r_2\cdot \left[
+ \begin{matrix}
+   r_1cos\theta_1cos\theta_2 - r_1sin\theta_1sin\theta_2 \\
+   r_1cos\theta_1sin\theta_2 + r_1cos\theta_2sin\theta_1
+  \end{matrix}
+  \right] \\
+&= r_1r_2\left[
+ \begin{matrix}
+   cos(\theta_1+\theta_2) \\
+   sin(\theta_1+\theta_2)
+  \end{matrix}
+  \right]
+\end{aligned}
+</script></p>
+<p>&#x7531;&#x6B64;&#x8BC1;&#x660E;&#x51FA;&#xFF0C;<script type="math/tex; ">z_1z_2</script>&#x7684;&#x51E0;&#x4F55;&#x610F;&#x4E49;&#x662F;&#xFF1A;&#x628A;&#x590D;&#x6570;<script type="math/tex; ">z_1</script>&#x5BF9;&#x5E94;&#x7684;&#x5411;&#x91CF;<script type="math/tex; ">\pmb{OZ}_1</script>&#xFF0C;&#x7ED5;<script type="math/tex; ">O</script>&#x65CB;&#x8F6C;<script type="math/tex; ">\theta_2</script>&#xFF0C;&#x7136;&#x540E;&#x518D;&#x7F29;&#x653E;<script type="math/tex; ">r_2</script>&#x5BF9;&#x5E94;&#x7684;&#x590D;&#x6570;&#x3002;</p>
+<h4 id="3-&#x7B49;&#x5DEE;&#x6570;&#x5217;&#x901A;&#x9879;">3. &#x7B49;&#x5DEE;&#x6570;&#x5217;&#x901A;&#x9879;</h4>
+<p><script type="math/tex; ">{a_n}</script>&#x4E3A;&#x7B49;&#x5DEE;&#x6570;&#x5217;&#xFF0C;&#x90A3;&#x4E48;&#x6709;&#x7B49;&#x5DEE;&#x6570;&#x5217;&#x901A;&#x9879;&#xFF1A;
+<script type="math/tex; ">a_n = a_1 + (n-1) \times d</script></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="GlobalPointer.html" class="navigation navigation-prev " aria-label="Previous page: GlobalPointer">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="多标签CE.html" class="navigation navigation-next " aria-label="Next page: 多标签CE">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"RoPE","level":"1.4.2","depth":2,"next":{"title":"多标签CE","level":"1.4.3","depth":2,"path":"book/papers/多标签CE.md","ref":"book/papers/多标签CE.md","articles":[]},"previous":{"title":"GlobalPointer","level":"1.4.1","depth":2,"path":"book/papers/GlobalPointer.md","ref":"book/papers/GlobalPointer.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","-lunr","-sharing","search-pro","advanced-emoji","mermaid-gb3","chapter-fold","expandable-chapters","highlight","emphasize","prism","mathjax","livereload"],"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"emphasize":{},"livereload":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"book/papers/RoPE.md","mtime":"2022-02-24T16:01:23.059Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-22T08:02:58.261Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

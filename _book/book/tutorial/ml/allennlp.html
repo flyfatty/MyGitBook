@@ -1,0 +1,1321 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>AllenNLP Tutorial · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="snorkel.html" />
+    
+    
+    <link rel="prev" href="pytorch.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introducation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../markdown.html">
+            
+                <a href="../markdown.html">
+            
+                    
+                    MarkDown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    机器学习基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="basic.html">
+            
+                <a href="basic.html">
+            
+                    
+                    什么是机器学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="rnn.html">
+            
+                <a href="rnn.html">
+            
+                    
+                    循环神经网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="transformer.html">
+            
+                <a href="transformer.html">
+            
+                    
+                    Transformer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="pytorch.html">
+            
+                <a href="pytorch.html">
+            
+                    
+                    PyTorch Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.5" data-path="allennlp.html">
+            
+                <a href="allennlp.html">
+            
+                    
+                    AllenNLP Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="snorkel.html">
+            
+                <a href="snorkel.html">
+            
+                    
+                    Snorkel Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="metric.html">
+            
+                <a href="metric.html">
+            
+                    
+                    Metric
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="optimizer.html">
+            
+                <a href="optimizer.html">
+            
+                    
+                    Optimizer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="loss.html">
+            
+                <a href="loss.html">
+            
+                    
+                    Loss
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Paper阅读
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../papers/GlobalPointer.html">
+            
+                <a href="../../papers/GlobalPointer.html">
+            
+                    
+                    GlobalPointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../papers/RoPE.html">
+            
+                <a href="../../papers/RoPE.html">
+            
+                    
+                    RoPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../papers/多标签CE.html">
+            
+                <a href="../../papers/多标签CE.html">
+            
+                    
+                    多标签CE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >AllenNLP Tutorial</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><center><h1 id="allennlp-tutorial">AllenNLP Tutorial</h1></center> </p>
+<blockquote>
+<p>allennlp&#x662F;&#x57FA;&#x4E8E;PyTorch&#x6269;&#x5C55;&#x7684;&#x9488;&#x5BF9;NLP&#x4EFB;&#x52A1;&#x7684;High-Level&#x6846;&#x67B6;&#xFF0C;&#x7528;&#x4E8E;&#x63D0;&#x5347;&#x5EFA;&#x6A21;&#x6548;&#x7387;&#x53CA;&#x7EDF;&#x4E00;&#x5EFA;&#x6A21;&#x5957;&#x8DEF;&#x3002;</p>
+</blockquote>
+<h4 id="&#x603B;&#x4F53;&#x67B6;&#x6784;">&#x603B;&#x4F53;&#x67B6;&#x6784;</h4>
+<div class="mermaid">
+graph LR
+    A[DatasetReader]--&gt;B[DataLoader]
+    A--&gt;E(Vocabulary)
+    B--&gt;D[Trainer]
+    C[Model]--&gt;D
+    E--&gt;C
+    C--&gt;F[Predictor]
+    E--&gt;F[Predictor]
+
+    style A fill:#f96,stroke:#333,stroke-width:4px
+    style C fill:#f96,stroke:#333,stroke-width:4px
+    style D fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+    style F fill:#bbf,stroke:#e86,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+</div>
+
+<p>&#x4E00;&#x4E2A;NLP&#x4EFB;&#x52A1;&#x53EF;&#x4EE5;&#x62BD;&#x8C61;&#x6210;&#x4E94;&#x4E2A;&#x6A21;&#x5757;&#x7EC4;&#x6210;&#xFF0C;&#x5176;&#x4E2D;<strong>DatasetReader</strong>&#x6A21;&#x5757;&#x548C;<strong>Model</strong>&#x662F;&#x9700;&#x8981;&#x7528;&#x6237;&#x53C2;&#x4E0E;&#x5EFA;&#x8BBE;&#x7684;&#xFF0C;allennlp&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x90E8;&#x5206;&#x5185;&#x7F6E;&#x7EC4;&#x4EF6;&#x53EF;&#x4F9B;&#x7528;&#x6237;&#x4F7F;&#x7528;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x6C42;&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;&#x3002;</p>
+<hr>
+<h4 id="datasetreader">DatasetReader</h4>
+<p><img src="https://guide.allennlp.org/part2/representing-text-as-features/overview.svg" alt=""></p>
+<blockquote>
+<p>Embedder&#x539F;&#x5219;&#x4E0A;&#x5C5E;&#x4E8E;Model&#x90E8;&#x5206;,&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x7406;&#x89E3;&#xFF0C;&#x5728;&#x8BE5;&#x90E8;&#x5206;&#x4E00;&#x5E76;&#x4ECB;&#x7ECD;&#xFF0C;Model&#x90E8;&#x5206;&#x4E0D;&#x518D;&#x4ECB;&#x7ECD;Embedder&#x3002;</p>
+</blockquote>
+<ul>
+<li><p>Method</p>
+<ul>
+<li>&#x7EE7;&#x627F;DatasetReader&#x5B9E;&#x73B0;&#x81EA;&#x5DF1;&#x7684;DatasetReader&#xFF0C;&#x5C3D;&#x91CF;&#x5B9E;&#x73B0;&#x53EF;&#x91CD;&#x7528;&#x7684;&#x4EE3;&#x7801;&#xFF08;&#x6BD4;&#x5982;&#x6309;&#x4EFB;&#x52A1;&#x533A;&#x5206;&#xFF09;,&#x4E5F;&#x53EF;&#x4EE5;&#x4E3A;&#x67D0;&#x4E2A;&#x6570;&#x636E;&#x96C6;&#x5B9A;&#x5236;&#x3002;</li>
+<li>&#x91CD;&#x8F7D;<code>_read()</code>&#x65B9;&#x6CD5;&#xFF08;&#x5FC5;&#x9009;&#xFF09;</li>
+<li>&#x91CD;&#x8F7D; <code>text_to_instance()</code>&#x65B9;&#x6CD5; (&#x53EF;&#x9009;)</li>
+<li>&#x6700;&#x7EC8;&#x8FD4;&#x56DE; instance &#x5B9E;&#x4F8B;</li>
+</ul>
+</li>
+<li><p>Code Guide</p>
+</li>
+</ul>
+<pre class="language-"><code class="lang-python"><span class="hljs-keyword">import</span> os
+<span class="hljs-keyword">from</span> itertools <span class="hljs-keyword">import</span> islice
+<span class="hljs-keyword">from</span> typing <span class="hljs-keyword">import</span> Dict, Iterable
+
+<span class="hljs-keyword">from</span> allennlp.data <span class="hljs-keyword">import</span> DatasetReader, Instance
+<span class="hljs-keyword">from</span> allennlp.data.fields <span class="hljs-keyword">import</span> LabelField, TextField
+<span class="hljs-keyword">from</span> allennlp.data.token_indexers <span class="hljs-keyword">import</span> TokenIndexer, SingleIdTokenIndexer
+<span class="hljs-keyword">from</span> allennlp.data.tokenizers <span class="hljs-keyword">import</span> Token, Tokenizer, WhitespaceTokenizer
+
+
+<span class="hljs-comment"># &#x7EE7;&#x627F; DatasetReader &#x5E76; _read() &#x548C; text_to_instance() </span>
+<span class="hljs-meta">@DatasetReader.register(&apos;classification-tsv&apos;)</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassificationTsvReader</span><span class="hljs-params">(DatasetReader)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self,
+                 tokenizer: Tokenizer = None,
+                 token_indexers: Dict[str, TokenIndexer] = None,
+                 max_tokens: int = None,
+                 **kwargs)</span>:</span>
+        super().__init__(**kwargs)
+        self.tokenizer = tokenizer <span class="hljs-keyword">or</span> WhitespaceTokenizer()
+        self.token_indexers = token_indexers <span class="hljs-keyword">or</span> {<span class="hljs-string">&apos;tokens&apos;</span>: SingleIdTokenIndexer()}
+        self.max_tokens = max_tokens
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">text_to_instance</span><span class="hljs-params">(self, text: str, label: str = None)</span> -&gt; Instance:</span>
+        tokens = self.tokenizer.tokenize(text)
+        <span class="hljs-keyword">if</span> self.max_tokens:
+            tokens = tokens[:self.max_tokens]
+        text_field = TextField(tokens, self.token_indexers)
+        fields = {<span class="hljs-string">&apos;text&apos;</span>: text_field}
+        <span class="hljs-keyword">if</span> label:
+            fields[<span class="hljs-string">&apos;label&apos;</span>] = LabelField(label)
+        <span class="hljs-keyword">return</span> Instance(fields)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_read</span><span class="hljs-params">(self, file_path: str)</span> -&gt; Iterable[Instance]:</span>
+        <span class="hljs-keyword">with</span> open(file_path, <span class="hljs-string">&apos;r&apos;</span>) <span class="hljs-keyword">as</span> lines:
+            <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> lines:
+                text, sentiment = line.strip().split(<span class="hljs-string">&apos;\t&apos;</span>)
+                <span class="hljs-keyword">yield</span> self.text_to_instance(text, sentiment)
+</code></pre>
+<h6 id="text-to-tensor-pipeline">Text-to-Tensor Pipeline</h6>
+<blockquote>
+<p>Text --&gt; Token List --&gt; Instance[Field(Indexer)] --&gt;  indexed tensor</p>
+</blockquote>
+<ul>
+<li><p>&#x4E00;&#x822C;&#x6B65;&#x9AA4;</p>
+<ol>
+<li>&#x9009;&#x62E9;&#x5408;&#x9002;&#x7684;&#x5206;&#x8BCD;&#x5668;&#xFF0C;&#x5C06;<code>str str str</code>&#x5207;&#x5206;&#x4E3A;<code>List[str]</code>&#xFF0C; &#x540C;&#x65F6;&#x4F7F;&#x7528;<code>Token</code>&#x7C7B;&#x578B;&#x7EF4;&#x62A4;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5F97;&#x5230;<code>List[Token]</code>&#x3002;</li>
+<li>&#x9009;&#x62E9;&#x5408;&#x9002;&#x7684;Field&#x7EF4;&#x62A4;&#x6BCF;&#x4E00;&#x4E2A;&#x6837;&#x672C;&#x7684;X&#x90E8;&#x5206;&#x548C;Y&#x90E8;&#x5206;,&#x6BD4;&#x5982;<code>TextField[List[Token]]</code>&#xFF0C;&#x540C;&#x65F6;&#x6307;&#x5B9A;&#x7D22;&#x5F15;&#x5668;&#x5B57;&#x5178;<code>Dict[TokenIndexer]</code>&#x3002;</li>
+<li><code>TextFieldEmbedder</code>&#xFF08;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;embedders&#x7684;&#x76D2;&#x5B50;&#xFF09;&#x5305;&#x542B;&#x4E0D;&#x540C;&#x7684;<code>TokenEmbedder</code>&#xFF0C;&#x5206;&#x522B;embeds&#x5BF9;&#x5E94;&#x7684;<strong>&#x7D22;&#x5F15;&#x7A7A;&#x95F4;</strong>&#x7684;&#x7684;&#x7D22;&#x5F15;&#x5E8F;&#x5217;&#xFF0C;&#x83B7;&#x5F97;&#x591A;&#x7EC4;Embedding&#x7ED3;&#x679C;(&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;<code>TokenEmbedder</code>&#x7ED3;&#x679C;&#x5C31;&#x4E00;&#x7EC4;)&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x5C06;&#x591A;&#x7EC4;Embedding&#x5411;&#x91CF;&#x5728;&#x6700;&#x540E;&#x4E00;&#x7EF4;Concat&#x8D77;&#x6765;&#xFF08;<code>TextFieldEmbedder</code>&#x5728;&#x53D1;&#x6325;&#x4F5C;&#x7528;&#xFF09;&#x3002;&#x8F93;&#x5165;&#x7684;&#x5F20;&#x91CF;shape&#x4E00;&#x822C;&#x662F;<script type="math/tex; ">B\times N</script>,&#x8F93;&#x51FA;&#x662F;<script type="math/tex; ">B\times N\times D_{concat}</script>&#xFF0C;&#x6B64;&#x65F6;&#x4E00;&#x4E2A;<code>Token</code>&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;Embedding&#x5411;&#x91CF;&#x3002;</li>
+</ol>
+</li>
+<li><p>&#x4E00;&#x822C;Token&#x7C7B;&#x578B;</p>
+<ul>
+<li>&#x5B57;&#x7B26; <strong>Characters</strong> (&quot;AllenNLP is great&quot; &#x2192; [&quot;A&quot;, &quot;l&quot;, &quot;l&quot;, &quot;e&quot;, &quot;n&quot;, &quot;N&quot;, &quot;L&quot;, &quot;P&quot;, &quot; &quot;, &quot;i&quot;, &quot;s&quot;, &quot; &quot;, &quot;g&quot;, &quot;r&quot;, &quot;e&quot;, &quot;a&quot;, &quot;t&quot;])</li>
+<li>&#x7247;&#x6BB5; <strong>Wordpieces</strong> (&quot;AllenNLP is great&quot; &#x2192; [&quot;Allen&quot;, &quot;##NL&quot;, &quot;##P&quot;, &quot;is&quot;, &quot;great&quot;])</li>
+<li>&#x5355;&#x8BCD; <strong>Words</strong> (&quot;AllenNLP is great&quot; &#x2192; [&quot;AllenNLP&quot;, &quot;is&quot;, &quot;great&quot;])</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>&#x901A;&#x7528;&#x642D;&#x914D;&#x65B9;&#x6CD5;<ul>
+<li>word-level tokenizer<ul>
+<li>SingleIdTokenIndexer &#x2192; Embedding (for things like GloVe or other simple embeddings, including learned POS tag embeddings)</li>
+<li>TokenCharactersIndexer &#x2192; TokenCharactersEncoder (for things like a character CNN)</li>
+<li>ElmoTokenIndexer &#x2192; ElmoTokenEmbedder (for ELMo)</li>
+<li>PretrainedTransformerMismatchedIndexer &#x2192; PretrainedTransformerMismatchedEmbedder (for using a transformer like BERT when you really want to do modeling at the word level, e.g., for a tagging task)</li>
+</ul>
+</li>
+<li>character-level tokenizer<ul>
+<li>SingleIdTokenIndexer &#x2192; Embedding</li>
+</ul>
+</li>
+<li>wordpiece tokenizer<ul>
+<li>PretrainedTransformerIndexer &#x2192; PretrainedTransformerEmbedder</li>
+<li>SingleIdTokenIndexer &#x2192; Embedding (if you don&#x2019;t want contextualized wordpieces for some reason)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Tips: &#x8BCD;&#x8868;&#x9884;&#x7559;0&#x4F5C;&#x4E3A;padding&#xFF0C;1&#x4F5C;&#x4E3A;unknow&#xFF0C;&#x6B63;&#x5F0F;&#x5355;&#x8BCD;&#x4ECE;2&#x5F00;&#x59CB;&#x7D22;&#x5F15;</p>
+</blockquote>
+<ul>
+<li>&#x7528;&#x4EE3;&#x7801;&#x6765;&#x7406;&#x89E3;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF08;5&#x4E2A;&#x4F8B;&#x5B50;&#xFF09;</li>
+</ul>
+<pre class="language-"><code class="lang-python"><span class="hljs-keyword">from</span> allennlp.data <span class="hljs-keyword">import</span> Vocabulary
+<span class="hljs-keyword">from</span> allennlp.data.fields <span class="hljs-keyword">import</span> TextField
+<span class="hljs-keyword">from</span> allennlp.data.token_indexers <span class="hljs-keyword">import</span> (
+    SingleIdTokenIndexer,
+    TokenCharactersIndexer
+)
+<span class="hljs-keyword">from</span> allennlp.data.tokenizers <span class="hljs-keyword">import</span> (
+    CharacterTokenizer,
+    SpacyTokenizer,
+    WhitespaceTokenizer,
+)
+
+<span class="hljs-comment"># &#x7B2C;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;word&#x5206;&#x8BCD;+singleID&#x7D22;&#x5F15;</span>
+tokenizer = WhitespaceTokenizer()
+
+<span class="hljs-comment"># &#x5EFA;&#x7ACB;&#x7D22;&#x5F15;&#x5668;&#x65F6;&#x8BBE;&#x7F6E;&#x5BF9;&#x5E94;&#x7684;&#x8BCD;&#x8868;&#x7A7A;&#x95F4;&#xFF0C;&#x9ED8;&#x8BA4;&quot;tokens&quot;</span>
+token_indexer = SingleIdTokenIndexer(namespace=<span class="hljs-string">&apos;token_vocab&apos;</span>)
+
+<span class="hljs-comment"># &#x624B;&#x52A8;&#x6784;&#x9020;&#x8BCD;&#x8868;&#xFF0C;&#x6307;&#x5B9A;&#x8BCD;&#x8868;&#x7A7A;&#x95F4;</span>
+vocab = Vocabulary()
+vocab.add_tokens_to_namespace([<span class="hljs-string">&apos;This&apos;</span>, <span class="hljs-string">&apos;is&apos;</span>, <span class="hljs-string">&apos;some&apos;</span>, <span class="hljs-string">&apos;text&apos;</span>, <span class="hljs-string">&apos;.&apos;</span>], namespace=<span class="hljs-string">&apos;token_vocab&apos;</span>)
+vocab.add_tokens_to_namespace([<span class="hljs-string">&apos;T&apos;</span>, <span class="hljs-string">&apos;h&apos;</span>, <span class="hljs-string">&apos;i&apos;</span>, <span class="hljs-string">&apos;s&apos;</span>, <span class="hljs-string">&apos; &apos;</span>, <span class="hljs-string">&apos;o&apos;</span>, <span class="hljs-string">&apos;m&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>, <span class="hljs-string">&apos;t&apos;</span>, <span class="hljs-string">&apos;x&apos;</span>, <span class="hljs-string">&apos;.&apos;</span>], namespace=<span class="hljs-string">&apos;character_vocab&apos;</span>)
+
+<span class="hljs-comment"># &#x6784;&#x9020;&#x4E00;&#x4E2A;&#x6837;&#x672C;</span>
+text = <span class="hljs-string">&quot;This is some text .&quot;</span>
+tokens = tokenizer.tokenize(text)
+print(<span class="hljs-string">&quot;Word tokens:&quot;</span>, tokens)
+
+<span class="hljs-comment"># &#x6307;&#x5B9A;TextField&#x65F6;&#x6307;&#x5B9A;Indexer&#x5305;&#xFF0C;key&#x4F5C;&#x4E3A;&#x7D22;&#x5F15;&#x7A7A;&#x95F4;&#x3002;</span>
+<span class="hljs-comment"># &#x7D22;&#x5F15;&#x7A7A;&#x95F4;&#x548C;&#x8BCD;&#x8868;&#x7A7A;&#x95F4;&#x7684;&#x533A;&#x522B;&#xFF1A;&#x7D22;&#x5F15;&#x7A7A;&#x95F4;&#x4E0E;Embedding&#x5C42;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x7D22;&#x5F15;&#x7A7A;&#x95F4;&#x5B66;&#x4E60;&#x4E0D;&#x540C;&#x7684;Embedding&#x77E9;&#x9635;&#x3002;&#x4E0D;&#x540C;&#x7D22;&#x5F15;&#x7A7A;&#x95F4;&#x3001;&#x540C;&#x4E00;&#x8BCD;&#x8868;&#x7A7A;&#x95F4;&#x8868;&#x793A;&#x53EF;&#x4EE5;&#x5171;&#x4EAB;&#x8BCD;&#x8868;&#xFF0C;&#x4F46;&#x4E0D;&#x5171;&#x4EAB;Embedding&#x77E9;&#x9635;</span>
+text_field = TextField(tokens, {<span class="hljs-string">&apos;tokens&apos;</span>: token_indexer})
+
+<span class="hljs-comment"># &#x7528;&#x8BCD;&#x8868;&#x751F;&#x6210;Field&#x5BF9;&#x5E94;&#x7684;&#x7D22;&#x5F15;&#x5E8F;&#x5217;&#xFF0C;&#x7ED3;&#x679C;&#x7EF4;&#x62A4;&#x5728; indexed_tokens</span>
+text_field.index(vocab)
+
+<span class="hljs-comment"># &#x83B7;&#x5F97;&#x6BCF;&#x4E2A;&quot;&#x7D22;&#x5F15;&#x7A7A;&#x95F4;_key&quot;&#x7684;&#x957F;&#x5EA6;</span>
+padding_lengths = text_field.get_padding_lengths()
+
+<span class="hljs-comment"># &#x751F;&#x6210; indexed tensor &#x51C6;&#x5907;&#x5C5E;&#x5165;&#x5230;Model</span>
+tensor_dict = text_field.as_tensor(padding_lengths)
+print(<span class="hljs-string">&quot;With single id indexer:&quot;</span>, tensor_dict)
+
+<span class="hljs-comment"># &#x7B2C;&#x4E8C;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#xFF0C;word&#x5206;&#x8BCD;+char&#x7D22;&#x5F15;, &#x4F7F;&#x7528;&#x53E6;&#x4E00;&#x4E2A;Indexer,&#x6307;&#x5B9A;&#x8BCD;&#x8868;&#x7A7A;&#x95F4;</span>
+token_indexer = TokenCharactersIndexer(namespace=<span class="hljs-string">&apos;character_vocab&apos;</span>)
+
+<span class="hljs-comment"># &#x5EFA;&#x7ACB;Field&#xFF0C;&#x7EF4;&#x62A4;&#x5728; &#x7D22;&#x5F15;&#x7A7A;&#x95F4; token_characters</span>
+text_field = TextField(tokens, {<span class="hljs-string">&apos;token_characters&apos;</span>: token_indexer})
+<span class="hljs-comment"># &#x5229;&#x7528;&#x8BCD;&#x8868;&#x548C;&#x7D22;&#x5F15;&#x5668;&#x751F;&#x6210;&#x7D22;&#x5F15;&#x5E8F;&#x5217;&#x7EF4;&#x62A4;&#x5728;Field &#xFF0C; &#x4E00;&#x4E2A;Token --&gt; &#x4E00;&#x4E2A;&#x7D22;&#x5F15;&#x5E8F;&#x5217;</span>
+text_field.index(vocab)
+
+<span class="hljs-comment"># &#x83B7;&#x5F97;padding&#x540E;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x540E;&#x9762;&#x7528;&#x6765;&#x6784;&#x9020;tensor</span>
+padding_lengths = text_field.get_padding_lengths()
+print(<span class="hljs-string">&quot;padding_lengths &quot;</span>, padding_lengths)
+
+<span class="hljs-comment"># padding &#x5E76; &#x8F6C;&#x6362; tensor</span>
+tensor_dict = text_field.as_tensor(padding_lengths)
+<span class="hljs-comment"># &#x751F;&#x6210;Tensor&#x683C;&#x5F0F; [B x N x C]</span>
+print(<span class="hljs-string">&quot;With token characters indexer:&quot;</span>, tensor_dict)
+
+<span class="hljs-comment"># &#x7B2C;&#x4E09;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;char &#x5206;&#x8BCD;&#x5668; + SingleID&#x7D22;&#x5F15;&#x5668;</span>
+<span class="hljs-comment"># char &#x5206;&#x8BCD;&#x5668;(instead of words or wordpieces).</span>
+tokenizer = CharacterTokenizer()
+
+tokens = tokenizer.tokenize(text)
+print(<span class="hljs-string">&quot;Character tokens:&quot;</span>, tokens)
+
+<span class="hljs-comment"># &#x5EFA;&#x7ACB;Single ID&#x7D22;&#x5F15;&#x5668;&#xFF0C;&#x6307;&#x5B9A;&#x8BCD;&#x8868;&#x7A7A;&#x95F4;</span>
+token_indexer = SingleIdTokenIndexer(namespace=<span class="hljs-string">&apos;character_vocab&apos;</span>)
+text_field = TextField(tokens, {<span class="hljs-string">&apos;token_characters&apos;</span>: token_indexer})
+text_field.index(vocab)
+
+padding_lengths = text_field.get_padding_lengths()
+
+tensor_dict = text_field.as_tensor(padding_lengths)
+print(<span class="hljs-string">&quot;With single id indexer:&quot;</span>, tensor_dict)
+
+<span class="hljs-comment"># &#x7B2C;&#x56DB;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;word&#x5206;&#x8BCD;+&#x591A;&#x4E2A;&#x7D22;&#x5F15;&#x5668;</span>
+tokenizer = WhitespaceTokenizer()
+
+<span class="hljs-comment"># word--&gt;idx &#x548C; word --&gt; idx &#x5E8F;&#x5217; &#xFF0C; &#x6307;&#x5B9A;&#x8BCD;&#x8868;&#x7A7A;&#x95F4;</span>
+token_indexers = {
+    <span class="hljs-string">&apos;tokens&apos;</span>: SingleIdTokenIndexer(namespace=<span class="hljs-string">&apos;token_vocab&apos;</span>),
+    <span class="hljs-string">&apos;token_characters&apos;</span>: TokenCharactersIndexer(namespace=<span class="hljs-string">&apos;character_vocab&apos;</span>)
+}
+
+text = <span class="hljs-string">&quot;This is some text .&quot;</span>
+tokens = tokenizer.tokenize(text)
+print(<span class="hljs-string">&quot;Tokens:&quot;</span>, tokens)
+
+<span class="hljs-comment"># &#x5EFA;&#x7ACB;Field &#xFF0C; &#x914D;&#x7F6E; indexer&#x5B57;&#x5178;</span>
+text_field = TextField(tokens, token_indexers)
+text_field.index(vocab)
+
+padding_lengths = text_field.get_padding_lengths()
+tensor_dict = text_field.as_tensor(padding_lengths)
+<span class="hljs-comment"># &#x8F93;&#x51FA; &#x7D22;&#x5F15;&#x7A7A;&#x95F4;+&#x7D22;&#x5F15;&#x7C7B;&#x578B;+Tensor&#x7684;&#x5B57;&#x5178; Dict[str,Dict[str,Tensor]]</span>
+print(<span class="hljs-string">&quot;Combined tensor dictionary:&quot;</span>, tensor_dict)
+
+<span class="hljs-comment"># &#x7B2C;&#x4E94;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x4F7F;&#x7528;Spacy&#x5E93;&#x83B7;&#x5F97;POS Tag&#xFF0C;&#x4FDD;&#x5B58;&#x5728;Token.tag_</span>
+tokenizer = SpacyTokenizer(language=<span class="hljs-string">&quot;en_core_web_sm&quot;</span>, pos_tags=<span class="hljs-keyword">True</span>)
+<span class="hljs-comment"># &#x8BCD;&#x8868;&#x4E2D;&#x6DFB;&#x52A0; &#x65B0;&#x7684;&#x8BCD;&#x8868;&#x7A7A;&#x95F4;</span>
+vocab.add_tokens_to_namespace([<span class="hljs-string">&apos;DT&apos;</span>, <span class="hljs-string">&apos;VBZ&apos;</span>, <span class="hljs-string">&apos;NN&apos;</span>, <span class="hljs-string">&apos;.&apos;</span>], namespace=<span class="hljs-string">&apos;pos_tag_vocab&apos;</span>)
+<span class="hljs-comment"># &#x5EFA;&#x7ACB;&#x4E09;&#x4E2A;&#x7D22;&#x5F15;&#x5668;&#xFF0C;&#x5206;&#x914D;&#x7D22;&#x5F15;&#x7A7A;&#x95F4;&#x548C;&#x8BBE;&#x7F6E;&#x8BCD;&#x8868;&#x7A7A;&#x95F4;&#xFF0C;&#x5176;&#x4E2D;&#x4E24;&#x4E2A;single id&#x7D22;&#x5F15;&#x5668;&#x548C;&#x4E00;&#x4E2A;char&#x7D22;&#x5F15;&#x5668;</span>
+token_indexers = {
+    <span class="hljs-string">&apos;tokens&apos;</span>: SingleIdTokenIndexer(namespace=<span class="hljs-string">&apos;token_vocab&apos;</span>),
+    <span class="hljs-string">&apos;token_characters&apos;</span>: TokenCharactersIndexer(namespace=<span class="hljs-string">&apos;character_vocab&apos;</span>),
+    <span class="hljs-string">&apos;pos_tags&apos;</span>: SingleIdTokenIndexer(namespace=<span class="hljs-string">&apos;pos_tag_vocab&apos;</span>, feature_name=<span class="hljs-string">&apos;tag_&apos;</span>),
+}
+tokens = tokenizer.tokenize(text)
+print(<span class="hljs-string">&quot;Token tags:&quot;</span>, [token.text <span class="hljs-keyword">for</span> token <span class="hljs-keyword">in</span> tokens], <span class="hljs-string">&quot;POS tags:&quot;</span>, [token.tag_ <span class="hljs-keyword">for</span> token <span class="hljs-keyword">in</span> tokens])
+
+text_field = TextField(tokens, token_indexers)
+text_field.index(vocab)
+
+padding_lengths = text_field.get_padding_lengths()
+tensor_dict = text_field.as_tensor(padding_lengths)
+<span class="hljs-comment"># &#x751F;&#x6210;key&#x5206;&#x522B;&#x662F;tokens&#x3001;token_character&#x3001;pos_tags&#x7D22;&#x5F15;&#x7A7A;&#x95F4;</span>
+<span class="hljs-comment"># &#x5BF9;&#x5E94;&#x7684;&#x503C;(&#x5185;&#x90E8;&#x5B57;&#x5178;)&#x662F;key&#x4E3A;tokens&#x3001;token_characters&#x3001;tokens&#x7D22;&#x5F15;&#x7C7B;&#x578B;&#x7684;Tensor</span>
+print(<span class="hljs-string">&quot;Tensor dict with POS tags:&quot;</span>, tensor_dict)
+</code></pre>
+<h6 id="embedding">Embedding</h6>
+<blockquote>
+<p>indexed tensor --&gt; Embedding Vector</p>
+</blockquote>
+<ul>
+<li><p>&#x5E38;&#x89C1;&#x65B9;&#x6CD5;</p>
+<ul>
+<li>GloVe or word2vec embeddings</li>
+<li>Character CNNs</li>
+<li>POS tag embeddings</li>
+<li>Combination of GloVe and character CNNs</li>
+<li>wordpieces and BERT</li>
+</ul>
+</li>
+<li><p>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</p>
+<ul>
+<li>&#x4E00;&#x4E2A;<code>Embedder</code>&#x548C;&#x4E00;&#x4E2A;<code>TokenIndexer</code>&#x662F;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x7684;&#xFF0C;&#x4F7F;&#x7528;<strong>&#x7D22;&#x5F15;&#x7A7A;&#x95F4;</strong>&#x6807;&#x8BB0;&#x3002;</li>
+<li>&#x8F93;&#x5165;<code>Tensor</code>&#x91CC;&#x7684;&#x4E00;&#x4E2A;&#x7D22;&#x5F15;&#x503C;&#x5BF9;&#x5E94;&#x7684;&#x4E00;&#x4E2A;<code>Token</code>&#x7ECF;&#x8FC7;<code>Embedder</code>&#x64CD;&#x4F5C;&#x8F93;&#x51FA;&#x65F6;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;<code>Embedding</code>&#x5411;&#x91CF;&#x3002;</li>
+<li>&#x8F93;&#x5165;&#x4E0D;&#x540C;&#x7D22;&#x5F15;&#x7A7A;&#x95F4;&#x7684;<code>Tensor</code>&#x91CC;&#x7684;&#x591A;&#x4E2A;&#x7D22;&#x5F15;&#x503C;&#x5BF9;&#x5E94;&#x7684;&#x662F;&#x4E00;&#x4E2A;<code>Token</code>&#x7ECF;&#x8FC7;<code>Embedder</code>&#x64CD;&#x4F5C;&#x8F93;&#x51FA;&#x65F6;&#x4E5F;&#x662F;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;<code>Embedding</code>&#x5411;&#x91CF;&#x3002;</li>
+<li>&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;<code>BasicTextFieldEmbedder</code>&#x5C06;&#x591A;&#x4E2A;&#x7D22;&#x5F15;&#x7A7A;&#x95F4;&#x7684;<code>Embedding</code>&#x7ED3;&#x679C;concat&#x4E3A;&#x4E00;&#x4E2A;<code>Embedding</code>&#x5411;&#x91CF;&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x7528;&#x4EE3;&#x7801;&#x6765;&#x7406;&#x89E3;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;</p>
+</li>
+</ul>
+<pre class="language-"><code class="lang-python"><span class="hljs-keyword">import</span> torch
+<span class="hljs-keyword">from</span> allennlp.modules.seq2vec_encoders <span class="hljs-keyword">import</span> CnnEncoder
+<span class="hljs-keyword">from</span> allennlp.modules.text_field_embedders <span class="hljs-keyword">import</span> BasicTextFieldEmbedder
+<span class="hljs-keyword">from</span> allennlp.modules.token_embedders <span class="hljs-keyword">import</span> (
+    Embedding,
+    TokenCharactersEncoder
+)
+<span class="hljs-keyword">from</span> allennlp.data <span class="hljs-keyword">import</span> Vocabulary
+
+<span class="hljs-keyword">import</span> warnings
+
+warnings.filterwarnings(<span class="hljs-string">&quot;ignore&quot;</span>)
+
+<span class="hljs-comment">######### Demo1</span>
+
+
+<span class="hljs-comment"># token_tensor &#x7B49;&#x4EF7;&#x4E8E; Model forward&#x7684;&#x8F93;&#x5165; text &#xFF0C; &#x683C;&#x5F0F;&#x4E3A; Dict[str,Dict[str,Tensor]]</span>
+<span class="hljs-comment"># Tensor&#x7684;&#x683C;&#x5F0F;&#x4E00;&#x822C;&#x4E3A;&#x4E3A; [B x N] &#xFF08;word index&#xFF09; &#x6216; [B x N x C] ( char index)</span>
+
+<span class="hljs-comment"># &#x7B2C;&#x4E00;&#x4E2A;key&#x8868;&#x793A;&#x7D22;&#x5F15;&#x7A7A;&#x95F4;&#x540D;&#x79F0;&#xFF08;&#x81EA;&#x5B9A;&#x4E49;&#xFF09;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;key&#x8868;&#x793A;&#x6765;&#x6E90;&#x4E8E;Indexer&#x7684;&#x7C7B;&#x578B;&#xFF08;&#x81EA;&#x52A8;&#x751F;&#x6210;&#xFF09;</span>
+token_tensor = {<span class="hljs-string">&apos;indexer1&apos;</span>: {<span class="hljs-string">&apos;tokens&apos;</span>: torch.LongTensor([[<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">9</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>]])}}
+
+<span class="hljs-comment"># &#x914D;&#x7F6E;&#x6846;&#x67B6;&#x65B9;&#x5F0F;&#x4F1A;&#x81EA;&#x52A8;&#x6839;&#x636E;Vocab&#x5B9A;&#x4E49;num_embeddings&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5728;jsonnet&#x4E2D;&#x5B9A;&#x4E49;embedding_dim</span>
+embedding = Embedding(num_embeddings=<span class="hljs-number">10</span>, embedding_dim=<span class="hljs-number">3</span>)
+
+<span class="hljs-comment"># &#x628A;&#x5B9A;&#x4E49;&#x597D;&#x7684; token embedders &#x653E;&#x5728; TextFieldEmbedder &#x91CC;&#x5BF9;&#x5E94;&#x7684;&#x7D22;&#x5F15;&#x7A7A;&#x95F4;&#x4E2D;</span>
+embedder = BasicTextFieldEmbedder(token_embedders={<span class="hljs-string">&apos;indexer1&apos;</span>: embedding})
+
+<span class="hljs-comment"># &#x6267;&#x884C;&#x5F97;&#x5230;&#x7ED3;&#x679C; &#xFF0C;&#x683C;&#x5F0F;&#x4E3A; B x N x D</span>
+embedded_tokens = embedder(token_tensor)
+print(<span class="hljs-string">&quot;Using the TextFieldEmbedder:&quot;</span>, embedded_tokens)
+
+<span class="hljs-comment"># &#x4EE5;&#x4E0A;&#x5C31;&#x662F;&#x4E00;&#x822C;&#x6D41;&#x7A0B;&#xFF0C;&#x5982;&#x679C;&#x5C31;&#x4E00;&#x4E2A;&#x7D22;&#x5F15;&#x7A7A;&#x95F4;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0D;&#x7ED9;&#x5B83;&#x6253;&#x5305;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528; token embedder &#xFF0C; &#x8FD9;&#x65F6;&#x5019;&#x6CA1;&#x6709;&#x7D22;&#x5F15;&#x7A7A;&#x95F4;&#x7684;&#x6982;&#x5FF5;</span>
+<span class="hljs-comment"># &#x6CE8;&#x610F;:&#x5728;&#x4F7F;&#x7528;&#x914D;&#x7F6E;&#x6846;&#x67B6;&#x65B9;&#x6CD5;&#x65F6;&#x9700;&#x8981;&#x6309;&#x7167;&#x4E00;&#x822C;&#x6D41;&#x7A0B;&#x8FDB;&#x884C;</span>
+embedded_tokens = embedding(**token_tensor[<span class="hljs-string">&apos;indexer1&apos;</span>])
+print(<span class="hljs-string">&quot;Using the Embedding directly:&quot;</span>, embedded_tokens)
+
+<span class="hljs-comment">######### Demo2</span>
+<span class="hljs-comment"># &#x8FD9;&#x91CC;&#x662F;&#x5047;&#x8BBE;&#x6709;&#x4E24;&#x4E2A;&#x7D22;&#x5F15;&#x7A7A;&#x95F4; &#xFF0C;&#x5206;&#x522B;&#x662F; index1  [B x N] &#xFF0C; index2 [B x N x C]</span>
+token_tensor = {<span class="hljs-string">&apos;indexer2&apos;</span>: {<span class="hljs-string">&apos;token_characters&apos;</span>: torch.tensor([[[<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">0</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">9</span>, <span class="hljs-number">5</span>], [<span class="hljs-number">6</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>]]])},
+                <span class="hljs-string">&apos;indexer1&apos;</span>: {<span class="hljs-string">&apos;tokens&apos;</span>: torch.LongTensor([[<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">9</span>]])}}
+
+<span class="hljs-comment"># &#x5B9A;&#x4E49;&#x4E00;&#x4E2A; token embedder &#x5BF9;&#x5E94; indexer1 &#x7D22;&#x5F15;&#x7A7A;&#x95F4;</span>
+embedding = Embedding(num_embeddings=<span class="hljs-number">10</span>, embedding_dim=<span class="hljs-number">3</span>)
+
+<span class="hljs-comment"># &#x5B9A;&#x4E49;&#x53E6;&#x4E00;&#x4E2A; token embedder &#x5BF9;&#x5E94; indexer2 &#x7D22;&#x5F15;&#x7A7A;&#x95F4;</span>
+character_embedding = Embedding(num_embeddings=<span class="hljs-number">10</span>, embedding_dim=<span class="hljs-number">3</span>)
+cnn_encoder = CnnEncoder(embedding_dim=<span class="hljs-number">3</span>, num_filters=<span class="hljs-number">4</span>, ngram_filter_sizes=(<span class="hljs-number">3</span>,))
+token_encoder = TokenCharactersEncoder(character_embedding, cnn_encoder)
+
+<span class="hljs-comment"># &#x5C06;&#x4E24;&#x4E2A; token_embedder &#x6309;&#x7167;&#x5BF9;&#x5E94;&#x7684;&#x7D22;&#x5F15;&#x7A7A;&#x95F4;&#x6253;&#x5305;</span>
+embedder = BasicTextFieldEmbedder(token_embedders={<span class="hljs-string">&apos;indexer2&apos;</span>: token_encoder, <span class="hljs-string">&apos;indexer1&apos;</span>: embedding})
+
+<span class="hljs-comment"># &#x6267;&#x884C;&#x5F97;&#x5230;embedding&#x7ED3;&#x679C; , &#x683C;&#x5F0F;&#x4E3A;  [B x N x D_concat]</span>
+embedded_tokens = embedder(token_tensor)
+print(<span class="hljs-string">&quot;With a character CNN:&quot;</span>, embedded_tokens)
+
+<span class="hljs-comment">######### Demo3</span>
+<span class="hljs-comment"># &#x518D;&#x4E3E;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x4E09;&#x4E2A;&#x7D22;&#x5F15;&#x7A7A;&#x95F4;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;&#x4E24;&#x4E2A;&#x7C7B;&#x578B;&#x7684;Indexer</span>
+token_tensor = {
+    <span class="hljs-string">&apos;tokens&apos;</span>: {<span class="hljs-string">&apos;tokens&apos;</span>: torch.LongTensor([[<span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>]])},
+    <span class="hljs-string">&apos;token_characters&apos;</span>: {<span class="hljs-string">&apos;token_characters&apos;</span>: torch.LongTensor([[[<span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>], [<span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>], [<span class="hljs-number">5</span>, <span class="hljs-number">4</span>, <span class="hljs-number">0</span>]]])},
+    <span class="hljs-string">&apos;pos_tag_tokens&apos;</span>: {<span class="hljs-string">&apos;tokens&apos;</span>: torch.tensor([[<span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]])}
+}
+
+<span class="hljs-comment"># &#x624B;&#x52A8;&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x8BCD;&#x8868;&#xFF0C;&#x6307;&#x5B9A;&#x8BCD;&#x8868;&#x7A7A;&#x95F4;&#x3002;&#x8BE5;&#x8FC7;&#x7A0B;&#x7531;&#x6846;&#x67B6;&#x81EA;&#x52A8;&#x5B8C;&#x6210;</span>
+vocab = Vocabulary()
+vocab.add_tokens_to_namespace([<span class="hljs-string">&apos;This&apos;</span>, <span class="hljs-string">&apos;is&apos;</span>, <span class="hljs-string">&apos;some&apos;</span>, <span class="hljs-string">&apos;text&apos;</span>, <span class="hljs-string">&apos;.&apos;</span>], namespace=<span class="hljs-string">&apos;token_vocab&apos;</span>)
+vocab.add_tokens_to_namespace([<span class="hljs-string">&apos;T&apos;</span>, <span class="hljs-string">&apos;h&apos;</span>, <span class="hljs-string">&apos;i&apos;</span>, <span class="hljs-string">&apos;s&apos;</span>, <span class="hljs-string">&apos; &apos;</span>, <span class="hljs-string">&apos;o&apos;</span>, <span class="hljs-string">&apos;m&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>, <span class="hljs-string">&apos;t&apos;</span>, <span class="hljs-string">&apos;x&apos;</span>, <span class="hljs-string">&apos;.&apos;</span>], namespace=<span class="hljs-string">&apos;character_vocab&apos;</span>)
+vocab.add_tokens_to_namespace([<span class="hljs-string">&apos;DT&apos;</span>, <span class="hljs-string">&apos;VBZ&apos;</span>, <span class="hljs-string">&apos;NN&apos;</span>, <span class="hljs-string">&apos;.&apos;</span>], namespace=<span class="hljs-string">&apos;pos_tag_vocab&apos;</span>)
+
+<span class="hljs-comment"># &#x5EFA;&#x7ACB;Embedding&#x5C42;&#x65F6;&#x6307;&#x5B9A;&#x8BCD;&#x8868;&#x53CA;&#x8BCD;&#x8868;&#x7A7A;&#x95F4;&#xFF0C;&#x5236;&#x5B9A;&#x8BCD;&#x8868;&#x65F6;&#x65E0;&#x9700;&#x6307;&#x5B9A; num_embeddings &#x53C2;&#x6570;(&#x914D;&#x7F6E;&#x6846;&#x67B6;&#x542F;&#x52A8;&#x65B9;&#x5F0F;&#x81EA;&#x52A8;&#x6307;&#x5B9A;&#x8BCD;&#x8868;)</span>
+embedding = Embedding(embedding_dim=<span class="hljs-number">3</span>, vocab_namespace=<span class="hljs-string">&apos;token_vocab&apos;</span>, vocab=vocab)
+
+character_embedding = Embedding(embedding_dim=<span class="hljs-number">4</span>, vocab_namespace=<span class="hljs-string">&apos;character_vocab&apos;</span>, vocab=vocab)
+cnn_encoder = CnnEncoder(embedding_dim=<span class="hljs-number">4</span>, num_filters=<span class="hljs-number">5</span>, ngram_filter_sizes=[<span class="hljs-number">3</span>])
+token_encoder = TokenCharactersEncoder(character_embedding, cnn_encoder)
+
+pos_tag_embedding = Embedding(embedding_dim=<span class="hljs-number">6</span>, vocab_namespace=<span class="hljs-string">&apos;pos_tag_vocab&apos;</span>, vocab=vocab)
+
+<span class="hljs-comment"># &#x6309;&#x7167;&#x7D22;&#x5F15;&#x7A7A;&#x95F4;&#x6253;&#x5305;Token Embedder</span>
+embedder = BasicTextFieldEmbedder(
+    token_embedders={<span class="hljs-string">&apos;tokens&apos;</span>: embedding,
+                     <span class="hljs-string">&apos;token_characters&apos;</span>: token_encoder,
+                     <span class="hljs-string">&apos;pos_tag_tokens&apos;</span>: pos_tag_embedding})
+
+embedded_tokens = embedder(token_tensor)
+print(embedded_tokens)
+</code></pre>
+<h4 id="model">Model</h4>
+<blockquote>
+<p>&#x8BE5;&#x90E8;&#x5206;&#x662F;&#x6700;&#x5177;&#x6709;&#x7075;&#x6D3B;&#x7A0B;&#x5EA6;&#x7684;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x8005;&#x5177;&#x5907;&#x4E00;&#x5B9A;&#x7684;&#x77E5;&#x8BC6;&#x50A8;&#x5907;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5B8C;&#x5168;&#x81EA;&#x5B9A;&#x4E49;Model&#x6216;&#x5229;&#x7528;&#x5185;&#x7F6E;Model&#x6784;&#x9020;&#x81EA;&#x5DF1;&#x7684;Model&#x3002;</p>
+</blockquote>
+<p><img src="https://guide.allennlp.org/part1/your-first-model/designing-a-model-5.svg" alt=""></p>
+<ul>
+<li>&#x4E00;&#x822C;&#x7EC4;&#x6210;<ol>
+<li>Embedder</li>
+<li>Encoder</li>
+<li>Decoder</li>
+</ol>
+</li>
+</ul>
+<h6 id="&#x6700;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;">&#x6700;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;</h6>
+<pre class="language-"><code class="lang-python"><span class="hljs-keyword">from</span> typing <span class="hljs-keyword">import</span> Dict
+
+<span class="hljs-keyword">import</span> torch
+<span class="hljs-keyword">from</span> allennlp.data <span class="hljs-keyword">import</span> Vocabulary
+<span class="hljs-keyword">from</span> allennlp.models <span class="hljs-keyword">import</span> Model
+<span class="hljs-keyword">from</span> allennlp.modules <span class="hljs-keyword">import</span> TextFieldEmbedder, Seq2VecEncoder
+<span class="hljs-keyword">from</span> allennlp.nn <span class="hljs-keyword">import</span> util
+<span class="hljs-keyword">from</span> allennlp.training.metrics <span class="hljs-keyword">import</span> CategoricalAccuracy
+
+<span class="hljs-comment"># &#x914D;&#x7F6E;&#x6846;&#x67B6;&#x6CE8;&#x518C;&#x540D;&#x79F0;</span>
+<span class="hljs-meta">@Model.register(&apos;simple_classifier&apos;)</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SimpleClassifier</span><span class="hljs-params">(Model)</span>:</span> <span class="hljs-comment"># &#x7EE7;&#x627F;Model&#x7C7B;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self,
+                 vocab: Vocabulary, # &#x5FC5;&#x9009;
+                 embedder: TextFieldEmbedder, # &#x5FC5;&#x9009;
+                 encoder: Seq2VecEncoder)</span>:</span>
+        super().__init__(vocab)
+        self.embedder = embedder
+        self.encoder = encoder
+        num_labels = vocab.get_vocab_size(<span class="hljs-string">&quot;labels&quot;</span>)
+        self.classifier = torch.nn.Linear(encoder.get_output_dim(), num_labels) <span class="hljs-comment"># &#x7EBF;&#x6027;&#x5206;&#x7C7B;&#x5668;</span>
+        self.accuracy = CategoricalAccuracy()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">forward</span><span class="hljs-params">(self,
+                text: Dict[str, torch.Tensor],
+                label: torch.Tensor = None)</span> -&gt; Dict[str, torch.Tensor]:</span>
+        <span class="hljs-comment"># Shape: (batch_size, num_tokens, embedding_dim)</span>
+        embedded_text = self.embedder(text)
+        <span class="hljs-comment"># Shape: (batch_size, num_tokens)</span>
+        mask = util.get_text_field_mask(text)
+        <span class="hljs-comment"># Shape: (batch_size, encoding_dim)</span>
+        encoded_text = self.encoder(embedded_text, mask)
+        <span class="hljs-comment"># Shape: (batch_size, num_labels)</span>
+        logits = self.classifier(encoded_text)
+        <span class="hljs-comment"># Shape: (batch_size, num_labels)</span>
+        probs = torch.nn.functional.softmax(logits, dim=<span class="hljs-number">-1</span>)
+        <span class="hljs-comment"># Shape: (1,)</span>
+        output = {<span class="hljs-string">&apos;probs&apos;</span>: probs}
+        <span class="hljs-keyword">if</span> label <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">None</span>:
+            self.accuracy(logits, label)
+            output[<span class="hljs-string">&apos;loss&apos;</span>] = torch.nn.functional.cross_entropy(logits, label)
+        <span class="hljs-keyword">return</span> output
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_metrics</span><span class="hljs-params">(self, reset: bool = False)</span> -&gt; Dict[str, float]:</span>
+        <span class="hljs-keyword">return</span> {<span class="hljs-string">&quot;accuracy&quot;</span>: self.accuracy.get_metric(reset)}
+</code></pre>
+<ul>
+<li>&#x7EC4;&#x6210;<ul>
+<li>Embedder  &#x5D4C;&#x5165;&#x5C42;</li>
+<li>Encoder   &#x7F16;&#x7801;&#x5668;</li>
+<li>Decoder   &#x89E3;&#x7801;&#x5668;&#xFF08;&#x53EF;&#x9009;&#xFF09;</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Basic Classifier</li>
+</ul>
+<div class="mermaid">
+graph LR
+    A[Embedder]--&gt;B[Seq2Seq Encoder]
+    B--&gt;C[Seq2Vec Encoder]
+    C--&gt;D[FeedForward]
+    D--&gt;E(Cls Layer)
+    A--&gt;C
+    C--&gt;E
+</div>
+
+<ul>
+<li>Simple Tagger</li>
+</ul>
+<div class="mermaid">
+graph LR
+    A[Embedder]--&gt;B[Seq2Seq Encoder]
+    B--&gt;C(Tag Proj Layer)
+</div>
+
+
+<hr>
+<h2 id="&#x9644;&#x5F55;">&#x9644;&#x5F55;</h2>
+<h3 id="&#x6CE8;&#x518C;&#x540D;&#x79F0;&#x7D22;&#x5F15;&#x8868;">&#x6CE8;&#x518C;&#x540D;&#x79F0;&#x7D22;&#x5F15;&#x8868;</h3>
+<h6 id="datasetreader">DatasetReader</h6>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x6CE8;&#x518C;&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x6765;&#x6E90;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">ClsTsvDataSetReader</td>
+<td style="text-align:center">cls_tsv_dataset_reader</td>
+<td style="text-align:center">&#x81EA;&#x5B9A;&#x4E49;</td>
+<td>&#x6309;&#x7167;Tab&#x5206;&#x9694;&#x7684;&#x6587;&#x672C;&#x5206;&#x7C7B;&#x6570;&#x636E;&#x96C6;</td>
+</tr>
+</tbody>
+</table>
+<h6 id="token-&#x5206;&#x8BCD;&#x5668;">Token &#x5206;&#x8BCD;&#x5668;</h6>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x6CE8;&#x518C;&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x6765;&#x6E90;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&#x7A7A;&#x683C;&#x5206;&#x8BCD;&#x5668;</td>
+<td style="text-align:center">whitespace<br>just_spaces</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td>&#x9ED8;&#x8BA4;&#x9009;&#x9879;,&#x7528;&#x4E8E;&#x63D0;&#x524D;&#x6309;&#x7A7A;&#x683C;&#x6574;&#x7406;&#x597D;&#x7684;&#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x5B57;&#x7B26;&#x5206;&#x8BCD;&#x5668;</td>
+<td style="text-align:center">character</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td>&#x6309;&#x5B57;&#x7B26;&#x5206;&#x8BCD;&#xFF0C;&#x9ED8;&#x8BA4;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;</td>
+</tr>
+<tr>
+<td style="text-align:center">Spacy&#x5206;&#x8BCD;&#x5668;</td>
+<td style="text-align:center">spacy</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td>&#x4F7F;&#x7528;spacy&#x5E93;&#x5206;&#x8BCD;</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x5B57;&#x7B26;&#x6570;&#x5B57;&#x5206;&#x8BCD;&#x5668;</td>
+<td style="text-align:center">letters_digits</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td>&#x6309;&#x7167;&#x8FDE;&#x7EED;&#x5B57;&#x7B26;(&#x6C49;&#x5B57;)&#x3001;&#x8FDE;&#x7EED;&#x6570;&#x5B57;&#x3001;&#x7A7A;&#x683C;&#x5206;&#x8BCD;</td>
+</tr>
+<tr>
+<td style="text-align:center">Transformer&#x5206;&#x8BCD;&#x5668;</td>
+<td style="text-align:center">pretrained_transformer</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td>wordpieces&#x5355;&#x8BCD;&#x7247;&#x6BB5;</td>
+</tr>
+<tr>
+<td style="text-align:center">Jieba&#x5206;&#x8BCD;&#x5668;</td>
+<td style="text-align:center">jieba</td>
+<td style="text-align:center">&#x81EA;&#x5B9A;&#x4E49;</td>
+<td>&#x4F7F;&#x7528;jieba&#x5E93;&#x5206;&#x8BCD;</td>
+</tr>
+<tr>
+<td style="text-align:center">Bert&#x4E2D;&#x6587;&#x5206;&#x8BCD;&#x5668;</td>
+<td style="text-align:center">bert_token</td>
+<td style="text-align:center">&#x81EA;&#x5B9A;&#x4E49;</td>
+<td>#</td>
+</tr>
+</tbody>
+</table>
+<h6 id="token-indexer-&#x7D22;&#x5F15;&#x5668;">Token Indexer &#x7D22;&#x5F15;&#x5668;</h6>
+<p>&#x53EF;&#x4EE5;&#x7EC4;&#x5408;&#x591A;&#x79CD;&#x7D22;&#x5F15;&#x5F62;&#x5F0F;&#x4EE5;&#x751F;&#x6210;&#x4E0D;&#x540C;&#x7684;embedding&#x65B9;&#x5F0F;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x6CE8;&#x518C;&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x6765;&#x6E90;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&#x552F;&#x4E00;ID&#x7D22;&#x5F15;&#x5668;</td>
+<td style="text-align:center">single_id</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td>&#x6620;&#x5C04;&#x4E00;&#x4E2A;token&#x4E3A;&#x552F;&#x4E00;ID,&#x9ED8;&#x8BA4;0&#x8868;&#x793A;PADDING&#x3001;1&#x8868;&#x793A;UNKNOW</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x5B57;&#x7B26;&#x7D22;&#x5F15;&#x5668;</td>
+<td style="text-align:center">characters</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td>&#x4EE5;&#x5B57;&#x7B26;&#x4F5C;&#x4E3A;&#x7D22;&#x5F15;&#x65B9;&#x5F0F;</td>
+</tr>
+</tbody>
+</table>
+<h6 id="embedding-&#x8BCD;&#x5D4C;&#x5165;&#x6A21;&#x5757;">Embedding &#x8BCD;&#x5D4C;&#x5165;&#x6A21;&#x5757;</h6>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x7C7B;&#x578B;</th>
+<th style="text-align:center">&#x7C7B;&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x6CE8;&#x518C;&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">TokenEmbedder</td>
+<td style="text-align:center">Embedding</td>
+<td style="text-align:center">embedding</td>
+<td style="text-align:center">&#x4E00;&#x822C;&#x63A8;&#x8350;&#x9879;</td>
+</tr>
+<tr>
+<td style="text-align:center">TokenEmbedder</td>
+<td style="text-align:center">TokenCharactersEncoder</td>
+<td style="text-align:center">character_encoding</td>
+<td style="text-align:center">&#x7EC4;&#x5408;Embedding+Seq2VecEncoder</td>
+</tr>
+<tr>
+<td style="text-align:center">TextFieldEmbedder</td>
+<td style="text-align:center">BasicTextFieldEmbedder</td>
+<td style="text-align:center">basic</td>
+<td style="text-align:center">&#x9ED8;&#x8BA4;&#x9009;&#x9879;,TokenEmbedder&#x5C01;&#x88C5;&#x5668;</td>
+</tr>
+</tbody>
+</table>
+<h6 id="seq2vec-encoder">Seq2Vec Encoder</h6>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x6CE8;&#x518C;&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x6765;&#x6E90;</th>
+<th style="text-align:center">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">BagOfEmbeddings</td>
+<td style="text-align:center">boe</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x6700;&#x7B80;&#x5355;&#x7684;seq2vec&#x65B9;&#x6CD5;</td>
+</tr>
+<tr>
+<td style="text-align:center">RNN</td>
+<td style="text-align:center">rnn</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x7EE7;&#x627F;pytorch seq2vec wrap&#x7C7B;</td>
+</tr>
+<tr>
+<td style="text-align:center">LSTM</td>
+<td style="text-align:center">lstm</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x7EE7;&#x627F;pytorch seq2vec wrap&#x7C7B;</td>
+</tr>
+<tr>
+<td style="text-align:center">GRU</td>
+<td style="text-align:center">gru</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x7EE7;&#x627F;pytorch seq2vec wrap&#x7C7B;</td>
+</tr>
+<tr>
+<td style="text-align:center">Bi-LSTM</td>
+<td style="text-align:center">stacked_bidirectional_lstm</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x7EE7;&#x627F;pytorch seq2vec wrap&#x7C7B;</td>
+</tr>
+<tr>
+<td style="text-align:center">AlternatingLstm</td>
+<td style="text-align:center">alternating_lstm</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x7EE7;&#x627F;pytorch seq2vec wrap&#x7C7B;</td>
+</tr>
+<tr>
+<td style="text-align:center">1D CNN</td>
+<td style="text-align:center">cnn</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Highway CNN</td>
+<td style="text-align:center">cnn-highway</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+</tr>
+<tr>
+<td style="text-align:center">[CLS]</td>
+<td style="text-align:center">cls_pooler</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x7528;&#x4E8E;transformer&#x8BAD;&#x7EC3;</td>
+</tr>
+<tr>
+<td style="text-align:center">[CLS]</td>
+<td style="text-align:center">bert_pooler</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x7528;&#x4E8E;bert&#x8BAD;&#x7EC3;</td>
+</tr>
+</tbody>
+</table>
+<h6 id="seq2seq-encoder">Seq2Seq Encoder</h6>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x6CE8;&#x518C;&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x6765;&#x6E90;</th>
+<th style="text-align:center">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">RNN</td>
+<td style="text-align:center">rnn</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x7EE7;&#x627F;pytorch seq2seq wrap&#x7C7B;</td>
+</tr>
+<tr>
+<td style="text-align:center">LSTM</td>
+<td style="text-align:center">lstm</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x7EE7;&#x627F;pytorch seq2seq wrap&#x7C7B;</td>
+</tr>
+<tr>
+<td style="text-align:center">GRU</td>
+<td style="text-align:center">gru</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x7EE7;&#x627F;pytorch seq2seq wrap&#x7C7B;</td>
+</tr>
+<tr>
+<td style="text-align:center">Bi-LSTM</td>
+<td style="text-align:center">stacked_bidirectional_lstm</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x7EE7;&#x627F;pytorch seq2seq wrap&#x7C7B;</td>
+</tr>
+<tr>
+<td style="text-align:center">AlternatingLstm</td>
+<td style="text-align:center">alternating_lstm</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x7EE7;&#x627F;pytorch seq2seq wrap&#x7C7B;</td>
+</tr>
+<tr>
+<td style="text-align:center">Transformer Encoder</td>
+<td style="text-align:center">pytorch_transformer</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">FFN</td>
+<td style="text-align:center">feedforward</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">&#x7EC4;&#x5408;&#x6A21;&#x578B;</td>
+<td style="text-align:center">compose</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x6253;&#x5305;&#x591A;&#x4E2A;seq2seq encoder</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x95E8;&#x63A7;CNN</td>
+<td style="text-align:center">gated-cnn-encoder</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x6B63;&#x5904;&#x4E8E;&#x6D4B;&#x8BD5;&#x9636;&#x6BB5;</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x5360;&#x4F4D;&#x7B26;</td>
+<td style="text-align:center">pass_through</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x7A7A;encoder,&#x65B9;&#x4FBF;&#x7EDF;&#x4E00;&#x7EF4;&#x62A4;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</td>
+</tr>
+</tbody>
+</table>
+<h6 id="model">Model</h6>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x6CE8;&#x518C;&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x6765;&#x6E90;</th>
+<th style="text-align:center">&#x4EFB;&#x52A1;&#x7C7B;&#x578B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">BasicClassifier</td>
+<td style="text-align:center">basic_classifier</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x5206;&#x7C7B;</td>
+</tr>
+<tr>
+<td style="text-align:center">SimpleTagger</td>
+<td style="text-align:center">simple_tagger</td>
+<td style="text-align:center">&#x5185;&#x7F6E;</td>
+<td style="text-align:center">&#x6807;&#x6CE8;</td>
+</tr>
+<tr>
+<td style="text-align:center">BiattentiveClassificationNetwork</td>
+<td style="text-align:center">bcn</td>
+<td style="text-align:center">&#x5185;&#x7F6E;&#x6269;&#x5C55;</td>
+<td style="text-align:center">&#x5206;&#x7C7B;</td>
+</tr>
+<tr>
+<td style="text-align:center">CRFTagger</td>
+<td style="text-align:center">crf_tagger</td>
+<td style="text-align:center">&#x5185;&#x7F6E;&#x6269;&#x5C55;</td>
+<td style="text-align:center">&#x6807;&#x6CE8;</td>
+</tr>
+<tr>
+<td style="text-align:center">LanguageModel</td>
+<td style="text-align:center">language_model</td>
+<td style="text-align:center">&#x5185;&#x7F6E;&#x6269;&#x5C55;</td>
+<td style="text-align:center">&#x8BED;&#x8A00;&#x6A21;&#x578B;</td>
+</tr>
+<tr>
+<td style="text-align:center">BidirectionalLanguageModel</td>
+<td style="text-align:center">bidirectional-language-model</td>
+<td style="text-align:center">&#x5185;&#x7F6E;&#x6269;&#x5C55;</td>
+<td style="text-align:center">&#x8BED;&#x8A00;&#x6A21;&#x578B;</td>
+</tr>
+<tr>
+<td style="text-align:center">Bert</td>
+<td style="text-align:center">masked_language_model</td>
+<td style="text-align:center">&#x5185;&#x7F6E;&#x6269;&#x5C55;</td>
+<td style="text-align:center">&#x8BED;&#x8A00;&#x6A21;&#x578B;</td>
+</tr>
+<tr>
+<td style="text-align:center">NextTokenLM</td>
+<td style="text-align:center">next_token_lm</td>
+<td style="text-align:center">&#x5185;&#x7F6E;&#x6269;&#x5C55;</td>
+<td style="text-align:center">&#x8BED;&#x8A00;&#x6A21;&#x578B;</td>
+</tr>
+<tr>
+<td style="text-align:center">Simple Seq2Seq</td>
+<td style="text-align:center">simple_seq2seq</td>
+<td style="text-align:center">&#x5185;&#x7F6E;&#x6269;&#x5C55;</td>
+<td style="text-align:center">&#x751F;&#x6210;</td>
+</tr>
+<tr>
+<td style="text-align:center">CopyNet Seq2Seq</td>
+<td style="text-align:center">copynet_seq2seq</td>
+<td style="text-align:center">&#x5185;&#x7F6E;&#x6269;&#x5C55;</td>
+<td style="text-align:center">&#x751F;&#x6210;</td>
+</tr>
+<tr>
+<td style="text-align:center">Composed Seq2Seq</td>
+<td style="text-align:center">composed_seq2seq</td>
+<td style="text-align:center">&#x5185;&#x7F6E;&#x6269;&#x5C55;</td>
+<td style="text-align:center">&#x751F;&#x6210;</td>
+</tr>
+<tr>
+<td style="text-align:center">Bart</td>
+<td style="text-align:center">bart_encoder<br>bart</td>
+<td style="text-align:center">&#x5185;&#x7F6E;&#x6269;&#x5C55;</td>
+<td style="text-align:center">&#x751F;&#x6210;</td>
+</tr>
+<tr>
+<td style="text-align:center">Roberta</td>
+<td style="text-align:center">transformer_mc</td>
+<td style="text-align:center">&#x5185;&#x7F6E;&#x6269;&#x5C55;</td>
+<td style="text-align:center">&#x591A;&#x4EFB;&#x52A1;</td>
+</tr>
+</tbody>
+</table>
+<h6 id="trainer">Trainer</h6>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x6CE8;&#x518C;&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x6765;&#x6E90;</th>
+<th style="text-align:center">&#x4EFB;&#x52A1;&#x7C7B;&#x578B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h6 id="optimizer">Optimizer</h6>
+<p>Optimizer|AdamOptimizer|adam|&#x4E00;&#x822C;&#x63A8;&#x8350;&#x9879;</p>
+<h4 id="&#x5B9E;&#x6218;&#x6F14;&#x7EC3;">&#x5B9E;&#x6218;&#x6F14;&#x7EC3;</h4>
+<h6 id="&#x6587;&#x672C;&#x5206;&#x7C7B;">&#x6587;&#x672C;&#x5206;&#x7C7B;</h6>
+<p>1. </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="pytorch.html" class="navigation navigation-prev " aria-label="Previous page: PyTorch Tutorial">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="snorkel.html" class="navigation navigation-next " aria-label="Next page: Snorkel Tutorial">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"AllenNLP Tutorial","level":"1.3.5","depth":2,"next":{"title":"Snorkel Tutorial","level":"1.3.6","depth":2,"path":"book/tutorial/ml/snorkel.md","ref":"book/tutorial/ml/snorkel.md","articles":[]},"previous":{"title":"PyTorch Tutorial","level":"1.3.4","depth":2,"path":"book/tutorial/ml/pytorch.md","ref":"book/tutorial/ml/pytorch.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","-lunr","-sharing","search-pro","advanced-emoji","mermaid-gb3","chapter-fold","expandable-chapters","highlight","emphasize","prism","mathjax","livereload"],"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"emphasize":{},"livereload":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"book/tutorial/ml/allennlp.md","mtime":"2021-09-12T13:38:12.488Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-22T08:02:58.261Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
